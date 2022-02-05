@@ -1,9 +1,10 @@
 import React from 'react'
+import "./style.css"
 import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/">GDSC-TCOER</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,26 +15,20 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item ">
                         <Link className="nav-link" to="/Team">Teams</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/about">About Us</Link>
                     </li>
-                    {/* <li className="nav-item">
-                        <Link className="nav-link" to="/signup">Sign Up</Link>
-                    </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/login">Login</Link>
+                        <Link className="nav-link" to="/events">Events</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/contact">Contact Us</Link>
-                    </li> */}
+                    </li>
                 </ul>
-                {/* <form className="d-flex">
-                    <input className="form-control me-2 btn-outline-danger" type="search" placeholder="Search" aria-label="Search" />
-                    <button className="btn btn-danger" type="submit">Search</button>
-                </form> */}
+              
             </div>
         </div>
     </nav>

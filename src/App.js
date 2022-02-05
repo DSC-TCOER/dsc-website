@@ -1,13 +1,15 @@
 
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import { Login } from './components/Login';
+
 import { Team } from './components/Team';
-// import Contact from './components/Contact';
-// import Signup from './components/Signup';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Events from './components/Events';
+
 
 
 
@@ -16,24 +18,28 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
+        <Routes>
+          <Route path="/" element={<Home />}>
           </Route>
-          <Route exact path="/team">
-            <Team />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          
-        </Switch>
 
+          <Route path="/team" element={<Team />}>
+          </Route>
+
+          <Route path="/about" element={<About />}>
+          </Route>
+
+          <Route path="/contact" element={<Contact />}>
+          </Route>
+
+          <Route path="/events" element={<Events />}>
+          </Route>
+
+          <Route path="/footer" element={<Footer />}>
+          </Route>
+
+        </Routes>
       </Router>
+
     </>
   );
 }

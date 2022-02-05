@@ -1,0 +1,62 @@
+
+.aim-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+
+.aim-item:hover {
+  background: #1668fe;
+}
+
+.aim-item * {
+  transition: 0.5s;
+}
+
+.aim-item:hover * {
+  color: #f1f8ff;
+}
+
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  height: calc(100% - 38px);
+  transition: 0.5s;
+}
+
+.team-item img {
+  transition: 0.5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item:hover {
+  height: 100%;
+}
+
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}
+
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid #1668fe;
+}
+
+
+
+.fancy {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-top: 5px solid;
+  border-image: linear-gradient(
+      to right,
+      grey 25%,
+      yellow 25%,
+      yellow 50%,
+      red 50%,
+      red 75%,
+      teal 75%
+    )
+    5;
+}

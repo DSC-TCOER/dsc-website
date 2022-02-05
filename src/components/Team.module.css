@@ -2,3 +2,34 @@
     display:flex;
     border: 2px solid royalblue;
 }
+.item :hover{
+    border-bottom: 2px solid blue;
+}
+
+
+/* MEDIA QUERIES FOR PHONE */
+.container a{
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .container {
+      /* border: 2px solid red; */
+      text-align: center;
+    }
+  
+    .container-nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+  }
+
+
+ 
