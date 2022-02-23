@@ -2,79 +2,76 @@ import React from "react";
 import Footer from "./Footer";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
+import classes from "./Home.module.css";
 import Model from "../3D/dsc-custom-logo.gltf";
 
 const Home = () => {
   return (
     <>
-      <div className="container flex space-between">
-        <img src="./images/imagebg.jpg" class="img-fluid" alt="..." />
-        <div>
-          <model-viewer
-            alt="Google Developers logo"
-            src={Model}
-            auto-rotate
-          ></model-viewer>
-        </div>
+      <div className="container  flex space-between">
+        <model-viewer
+          alt="Google Developers logo"
+          src={Model}
+          camera-controls
+          auto-rotate
+        ></model-viewer>
       </div>
 
-      <div class="container-xxl py-5">
-        <div class="container">
+      <div className="container-xxl py-5">
+        <div className="container">
           <div className="border-bottom border-5 border-primary px-1">
-            <h5 class=" ff-secondary text-center text-primary fw-normal my-5">
+            <h5 className=" ff-secondary text-center text-primary fw-normal my-5">
               Our Aim
             </h5>
           </div>
-          <div class="row g-4 my-3">
-            <div class="col-lg-3 col-sm-6 ">
+          <div className="d-flex justify-content-around">
+            <div>
               <div
-                class="aim-item  pt-3"
+                className={classes.badge}
                 style={{
                   boxShadow: "0 0 47px rgb(0 0 0 / 43%)",
                   borderRadius: "19px",
                 }}
               >
-                <div class="p-4">
-                  <i class="fas fa-users fa-2x"></i>
+                <div className="p-4">
+                  <i className="fas fa-users fa-2x"></i>
                   <h5>Connect</h5>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div className="mh-25 mw-25">
               <div
-                class="aim-item pt-3"
+                className={classes.badge}
                 style={{
                   boxShadow: "0 0 47px rgb(0 0 0 / 43%)",
                   borderRadius: "19px",
                 }}
               >
-                <div class="p-4">
-                  <i class="fas fa-lightbulb fa-2x"></i>
+                <div className="p-4">
+                  <i className="fas fa-lightbulb fa-2x"></i>
                   <h5>Learn</h5>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-3 col-sm-6  ">
+            <div class="">
               <div
-                class="aim-item pt-3"
+                class=""
                 style={{
                   boxShadow: "0 0 47px rgb(0 0 0 / 43%)",
                   borderRadius: "19px",
                 }}
               >
-                <div class="p-4">
+                <div class={classes.badge}>
                   <i class="fas fa-trophy fa-2x"></i>
                   <h5>Grow</h5>
                 </div>
               </div>
             </div>
-
-            <div className="border-bottom border-5 border-primary px-1">
-              <h5 class=" ff-secondary text-center text-primary fw-normal my-5">
-                Helping Students Bridge The Gap Between Theory and Practice
-              </h5>
-            </div>
+          </div>
+          <div className="border-bottom border-5 border-primary px-1">
+            <h5 class=" ff-secondary text-center text-primary fw-normal my-5">
+              Helping Students Bridge The Gap Between Theory and Practice
+            </h5>
           </div>
         </div>
       </div>
