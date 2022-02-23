@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './Footer'
-import SubHome from './SubHome'
 import SubHome2 from './SubHome2'
 
 
@@ -8,6 +7,7 @@ const Home = () => {
     return (
 
         <>
+
             <div className="container">
                 <img src="./images/imagebg.jpg" class="img-fluid" alt="..." />
             </div>
@@ -63,7 +63,9 @@ const Home = () => {
 
                 <SubHome2 url="./images/connect.gif" para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors.
 " head = "Connect" />
-                <SubHome url="./images/Online-learning.gif" para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person." head = "Learn" />
+                <div style={{"background-color": "#d4d7da"}} >
+                <SubHome2 url="./images/Online-learning.gif" para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person." head = "Learn" />
+                </div>
                 <SubHome2 url="./images/growth2.gif" para="Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too."  head = "Grow"/>
 
             </div>
