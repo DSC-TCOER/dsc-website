@@ -1,0 +1,34 @@
+/* .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.hero {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero-text {
+    height: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.hero-image {
+    height: 35vw;
+    width: auto;
+    display: inline-block;
+    float: right;
+    padding-right: 10vw;
+    max-height: 500px;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}

@@ -1,4 +1,33 @@
 
+
+/* Navbar Styles */
+.nav-brand {
+  padding: 0rem;
+  padding-left: 2rem;
+  display: flex;
+}
+.nav-brand img {
+  width: 4rem;
+  margin: auto;
+}
+.nav-brand .text {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  justify-content: center;
+}
+.nav-brand .club {
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+}
+.nav-brand .college {
+  font-size: 1.1rem;
+}
+.nav-item {
+  margin: 0px 1rem;
+}
+
+
 .aim-item {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
   transition: 0.5s;
@@ -38,7 +67,7 @@
   border-radius: 38px 38px 0 0;
 }
 
-.nav-pills .nav-item .active {
+.nav-item .active {
   border-bottom: 2px solid #1668fe;
 }
 
