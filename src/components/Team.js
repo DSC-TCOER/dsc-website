@@ -52,68 +52,68 @@ export const Team = () => {
                     backgroundColor: "rgb(33, 37, 10)",
                   }}
                 >
-                  <li className="nav-item">
+                  <li className="nav-item teams-nav">
                     <a
                       className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
                       data-bs-toggle="pill"
                       href="#tab-1"
                     >
-                      <i className="fab fa-android fa-2x text-primary"></i>
+                      <i className="fab fa-android fa-2x"></i>
                       <div className="ps-3">
-                        <small style={{ color: "white" }}>Team</small>
-                        <h6 className="mt-n1 mb-0">Android</h6>
+                        <h5>Team</h5>
+                        <h4 className="mt-n1 mb-0">Android</h4>
                       </div>
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item teams-nav">
                     <a
                       className="d-flex align-items-center text-start mx-3 pb-3"
                       data-bs-toggle="pill"
                       href="#tab-2"
                     >
-                      <i className="fab fa-chrome fa-2x text-primary"></i>
+                      <i className="fab fa-chrome fa-2x"></i>
                       <div className="ps-3">
-                        <small style={{ color: "white" }}>Team</small>
-                        <h6 className="mt-n1 mb-0">Web</h6>
+                        <h5>Team</h5>
+                        <h4 className="mt-n1 mb-0">Web</h4>
                       </div>
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item teams-nav">
                     <a
                       className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                       data-bs-toggle="pill"
                       href="#tab-3"
                     >
-                      <i className="fas fa-calendar-check fa-2x text-primary"></i>
+                      <i className="fas fa-calendar-check fa-2x"></i>
                       <div className="ps-3">
-                        <small style={{ color: "white" }}>Team</small>
-                        <h6 className="mt-n1 mb-0">Event</h6>
+                        <h5>Team</h5>
+                        <h4 className="mt-n1 mb-0">Event</h4>
                       </div>
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item teams-nav">
                     <a
                       className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                       data-bs-toggle="pill"
                       href="#tab-4"
                     >
-                      <i className="fas fa-cogs fa-2x text-primary"></i>
+                      <i className="fas fa-cogs fa-2x "></i>
                       <div className="ps-3">
-                        <small style={{ color: "white" }}>Team</small>
-                        <h6 className="mt-n1 mb-0">Technical</h6>
+                        <h5>Team</h5>
+                        <h4 className="mt-n1 mb-0">Technical</h4>
                       </div>
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item teams-nav">
                     <a
                       className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                       data-bs-toggle="pill"
                       href="#tab-5"
                     >
-                      <i className="fas fa-magic fa-2x text-primary"></i>
+                      <i className="fas fa-magic fa-2x "></i>
                       <div className="ps-3">
-                        <small style={{ color: "white" }}>Team</small>
-                        <h6 className="mt-n1 mb-0">Design</h6>
+                        <h5>Team</h5>
+                        <h4 className="mt-n1 mb-0">Design</h4>
                       </div>
                     </a>
                   </li>

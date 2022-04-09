@@ -152,21 +152,23 @@ const Home = () => {
       <div className="">
         <SubHome2
           url="./images/connect.gif"
-          para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors.
-"
+          para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors."
           head="Connect"
+          addClass = "odd"
         />
         <div style={{ "background-color": "#d4d7da" }}>
           <SubHome2
             url="./images/Online-learning.gif"
             para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person."
             head="Learn"
+            addClass = "even"
           />
         </div>
         <SubHome2
           url="./images/growth2.gif"
           para="Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too."
           head="Grow"
+          addClass = "odd"
         />
       </div>
 

@@ -20,7 +20,7 @@
   }
   .hero img {
     display: block;
-    max-width: 30rem;
+    width: 45rem;
     margin: auto;
   }
   .hero-heading {

@@ -2,6 +2,17 @@ import React from 'react'
 import "./style.css"
 import { Link } from "react-router-dom";
 const Navbar = () => {
+    function navItemsHandler(e) {
+        var elems = document.querySelector(".active");
+        if(elems !==null){
+            elems.classList.remove("active");
+        }
+        if(e.target.classList.contains("nav-link")) {
+            e.target.parentElement.className += " active"
+        }
+        else 
+            e.target.className += " active";
+    }
     return (
         <>
         <nav style={{boxShadow: '0 0.9px 2.2px rgba(0, 0, 0, 0.039), 0 2.2px 5.3px rgba(0, 0, 0, 0.048), 0 4.1px 10px rgba(0, 0, 0, 0.052), 0 7.4px 17.9px rgba(0, 0, 0, 0.057), 0 13.8px 33.4px rgba(0, 0, 0, 0.067),0 33px 80px rgba(0, 0, 0, 0.11)'}} className="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
@@ -22,19 +33,19 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul style={{margin: 'auto', fontSize: '1.5rem'}} className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                    <li className="nav-item active" onClick={navItemsHandler}>
+                        <Link className="nav-link" aria-current="page" to="/">Home</Link>
                     </li>
-                    <li className="nav-item ">
+                    <li className="nav-item" onClick={navItemsHandler}>
                         <Link className="nav-link" to="/Team">Teams</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={navItemsHandler}>
                         <Link className="nav-link" to="/about">About Us</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={navItemsHandler}>
                         <Link className="nav-link" to="/events">Events</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={navItemsHandler}>
                         <Link className="nav-link" to="/contact">Contact Us</Link>
                     </li>
                 </ul>

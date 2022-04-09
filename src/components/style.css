@@ -26,6 +26,9 @@
 .nav-item {
   margin: 0px 1rem;
 }
+.navbar-nav .active {
+  border-bottom: 2px solid #1668fe;
+}
 
 
 .aim-item {
@@ -67,9 +70,16 @@
   border-radius: 38px 38px 0 0;
 }
 
-.nav-item .active {
-  border-bottom: 2px solid #1668fe;
+.teams-nav a {
+  color: #7db1ff;
+  font-size: 1.3rem;
 }
+
+.teams-nav .active {
+  color: white;
+}
+
+
 
 
 
