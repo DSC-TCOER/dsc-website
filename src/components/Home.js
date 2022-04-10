@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
-//import "./home.css";
+import "./home.css";
 //import Model from "../../public/images/DSC-3D-logo2.glb";
 
 const Home = () => {
@@ -39,9 +39,18 @@ const Home = () => {
             ></model-viewer>
           </div>
           <div className="col-lg-6">
-            <h3>Presenting,</h3>
-            <h2>Google Developer Student Club</h2>
-            <h3>TCOER Pune</h3>
+            <div className="heading">
+              <h3 style={{color: '#4285F4'}}>Presenting,</h3>
+              <h1><span style={{color: '#EA4335'}}>DSC</span> <span style={{color: '#FBBC04'}}>TCOER</span> <span style={{color: '#34A853'}}>PUNE</span></h1>
+              <h5 style={{fontWeight: '400', marginBottom: '1.5rem', fontSize: '1.5rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
+              <a
+                href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
+                class="btn-secondary"
+                target="nt"
+              >
+                Become A Member
+              </a>
+            </div>
           </div>
         </div>
       </header>
