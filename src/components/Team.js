@@ -16,8 +16,8 @@ export const Team = () => {
         <SubHome
           social2=""
           url="./images/team.gif"
-          head="heading"
-          para="Our team description"
+          head="The Board of 2021-22"
+          para="Coming together is a beginning, staying together is progress, and working together is success. Great things in business are never done by one person; they're done by a team of people. Success is best when it's shared."
         />
       </div>
 
@@ -29,7 +29,7 @@ export const Team = () => {
             <div className="text-center border-bottom border-5 border-primary px-1">
               <h1 className=" text-primary">Community Lead</h1>
             </div>
-            <div class="d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
               <Cards
                 name="Zahra Dehghan"
                 designation="Community Lead"
@@ -122,9 +122,9 @@ export const Team = () => {
 
               <div className="tab-content" style={{ marginTop: "0px" }}>
                 <div id="tab-1" className="tab-pane p-0 active">
-                  <div class="container-xxl pt-5 pb-3">
-                    <div class="container " style={{ marginBottom: "20px" }}>
-                      <div class="d-flex justify-content-center">
+                  <div className="container-xxl pt-5 pb-3">
+                    <div className="container " style={{ marginBottom: "20px" }}>
+                      <div className="d-flex justify-content-center">
                         <Cards
                           name="Mohammed Ali Inamdaar"
                           designation="Android Lead"
@@ -134,7 +134,7 @@ export const Team = () => {
                         />
                       </div>
 
-                      <div class="row g-4 d-flex justify-content-center">
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Fazila Sayyed"
                           designation="Android Team Member"
@@ -161,9 +161,9 @@ export const Team = () => {
                   </div>
                 </div>
                 <div id="tab-2" className="tab-pane   show p-0">
-                  <div class="container-xxl pt-5 pb-3">
-                    <div class="container">
-                      <div class="d-flex justify-content-center">
+                  <div className="container-xxl pt-5 pb-3">
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
                         <Cards
                           name="Tanmay Shinde"
                           designation="Web Lead"
@@ -172,7 +172,7 @@ export const Team = () => {
                           url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
                         />
                       </div>
-                      <div class="row g-4 d-flex justify-content-center">
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Hritik Zende"
                           designation="Web Team Member"
@@ -206,9 +206,9 @@ export const Team = () => {
                   </div>
                 </div>
                 <div id="tab-3" className="tab-pane   show p-0">
-                  <div class="container-xxl pt-5 pb-3">
-                    <div class="container">
-                      <div class="row g-4 d-flex justify-content-center">
+                  <div className="container-xxl pt-5 pb-3">
+                    <div className="container">
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Mohammad Anas"
                           designation="Events Lead"
@@ -236,9 +236,9 @@ export const Team = () => {
 
                 {/* tab 4 */}
                 <div id="tab-4" className="tab-pane   show p-0">
-                  <div class="container-xxl pt-5 pb-3">
-                    <div class="container">
-                      <div class="d-flex justify-content-center">
+                  <div className="container-xxl pt-5 pb-3">
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
                         <Cards
                           name="Vedant Bhogawade"
                           designation="Technical Lead"
@@ -247,7 +247,7 @@ export const Team = () => {
                           url="./images/DSC Team/Technical Team/Vedant Bhogawade.jpeg"
                         />
                       </div>
-                      <div class="row g-4 d-flex justify-content-center">
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Aditi Gangadhar"
                           designation="Technical Team Member"
@@ -269,9 +269,9 @@ export const Team = () => {
 
                 {/* tab 5 */}
                 <div id="tab-5" className="tab-pane   show p-0">
-                  <div class="container-xxl pt-5 pb-3">
-                    <div class="container">
-                      <div class="d-flex justify-content-center">
+                  <div className="container-xxl pt-5 pb-3">
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
                         <Cards
                           name="Raj Thakur"
                           designation="Design And Content Lead"
@@ -280,7 +280,7 @@ export const Team = () => {
                           url="./images/DSC Team/Content and Design team/Raj Thakur.jpeg"
                         />
                       </div>
-                      <div class="row g-4 d-flex justify-content-center">
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Iram Sayed"
                           designation="Design And Content Team Member"

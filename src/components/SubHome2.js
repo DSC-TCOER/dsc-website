@@ -4,13 +4,13 @@ const SubHome = ({ url, para, head, addClass }) => {
   if(addClass == 'odd') {
     return (
       <>
-        <section id="learn" class="p-5">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-            <div style={{display: 'flex', justifyContent: 'center'}} class="col-md">
+        <section id="learn" className="p-5">
+          <div className="container">
+            <div className="row align-items-center justify-content-between">
+            <div style={{display: 'flex', justifyContent: 'center'}} className="col-md">
                 <img
                   src={url}
-                  class="img-fluid"
+                  className="img-fluid"
                   alt=""
                   style={{
                     borderRadius: "44px",
@@ -20,9 +20,9 @@ const SubHome = ({ url, para, head, addClass }) => {
                   }}
                 />
               </div>
-              <div class="col-md p-5">
+              <div className="col-md p-5">
                 <h2>{head}</h2>
-                <p style={{fontSize: '1.7rem'}} class="lead">{para}</p>
+                <p style={{fontSize: '1.7rem'}} className="lead">{para}</p>
               </div>
             </div>
           </div>
@@ -32,17 +32,17 @@ const SubHome = ({ url, para, head, addClass }) => {
   }
   else return(
       <>
-        <section id="learn" class="p-5">
-          <div class="container">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-md p-5">
+        <section id="learn" className="p-5">
+          <div className="container">
+            <div className="row align-items-center justify-content-between">
+              <div className="col-md p-5">
                 <h2>{head}</h2>
-                <p style={{fontSize: '1.7rem'}} class="lead">{para}</p>
+                <p style={{fontSize: '1.7rem'}} className="lead">{para}</p>
               </div>
-              <div style={{display: 'flex', justifyContent: 'center'}} class="col-md">
+              <div style={{display: 'flex', justifyContent: 'center'}} className="col-md">
                 <img
                   src={url}
-                  class="img-fluid"
+                  className="img-fluid"
                   alt=""
                   style={{
                     borderRadius: "44px",

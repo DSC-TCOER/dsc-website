@@ -4,27 +4,27 @@ import "./subHome.css";
 const SubHome = ({ url, para, head }) => {
   return (
     <>
-      <section id="learn" class="p-5" style={{ background: "#d4d7da" }}>
-        <div class="container">
+      <section id="learn" className="p-5" style={{ background: "#d4d7da" }}>
+        <div className="container">
           <div
-            class="row align-items-center justify-content-between"
+            className="row align-items-center justify-content-between"
             style={{ padding: "2rem" }}
           >
-            <div style={{ textAlign: "right" }} class="col-md">
+            <div style={{ textAlign: "right" }} className="col-md">
               <img
                 src={url}
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
                 style={{ borderRadius: "3rem", width: "40rem" }}
               />
             </div>
             <div
               id="need-responsive"
-              class="col-md"
+              className="col-md"
               style={{ padding: "2rem 0.5rem" }}
             >
-              <h2>{head}</h2>
-              <p class="lead">{para}</p>
+              <h2 style={{fontSize: '2.5rem'}}>{head}</h2>
+              <p style={{fontSize: '1.6rem'}} className="lead">{para}</p>
             </div>
           </div>
         </div>

@@ -10,10 +10,10 @@ const About = () => {
             <div className="row g-5 align-items-center">
               <div className="col-lg-6 ">
                 <div className="row g-3">
-                  <div class="col-md">
+                  <div className="col-md">
                     <img
                       src="./images/homeIntro.gif"
-                      class="img-fluid"
+                      className="img-fluid"
                       alt=""
                       style={{ borderRadius: "140px" }}
                     />
@@ -33,16 +33,12 @@ const About = () => {
                   />{" "}
                   DSC TCOER
                 </h1>
-                <p className="mb-4">
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                  Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed
-                  stet lorem sit.
-                </p>
-                <p className="mb-4">
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                  sed stet lorem sit clita duo justo magna dolore erat amet
-                </p>
+                <hr></hr>
+                <h2>What is GDSC?</h2><br></br>
+                <h4>Google Developer Student Clubs are community groups for college and university students interested in Google developer technologies.</h4>
+                <br></br>
+                <p>Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. Google Developer Student Clubs is a program supported by Google Developers.</p>
+                <br></br>
                 <div className="row g-4 mb-4">
                   <div className="col-sm-6">
                     <div className="d-flex align-items-center border-start border-5 border-primary px-2">
