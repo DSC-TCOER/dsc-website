@@ -18,7 +18,7 @@ const Home = () => {
               src='./images/DSC-3D-logo2.glb'
               camera-controls
               environment-image="./images/white.png"
-              exposure = '0.4'
+              exposure = '0.5'
               auto-rotate
               auto-rotate-delay = '1000'
               rotation-per-second = '15deg'
@@ -28,9 +28,9 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <div className="heading">
-              <h3 style={{color: '#4285F4'}}>Presenting,</h3>
-              <h1><span style={{color: '#EA4335'}}>DSC</span> <span style={{color: '#FBBC04'}}>TCOER</span> <span style={{color: '#34A853'}}>PUNE</span></h1>
-              <h5 style={{fontWeight: '400', marginBottom: '1.5rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
+              <h3 className="presenting">Presenting,</h3>
+              <h1><span className="dsc">GDSC</span> <span className="tcoer">TCOER</span> <span className="pune">PUNE</span></h1>
+              <h5 style={{fontWeight: '400', marginBottom: '2rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"
@@ -49,8 +49,9 @@ const Home = () => {
                         <h5 style={{fontSize: '1.7rem'}} className=" ff-secondary text-center text-primary fw-normal my-5" >Our Aim</h5>
                     </div>
                     <div style={{justifyContent: 'center'}} className="row g-4 my-3">
-                        <div className="col-lg-3 col-sm-6 " >
 
+                        <div className="col-lg-3 col-sm-6 " >
+                          <a style={{textDecoration: 'none', color: 'black'}} href="#Connect">
                             <div className="aim-item  pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
                                 <div className="p-4">
                                     <i className="fas fa-users fa-2x"></i>
@@ -58,23 +59,30 @@ const Home = () => {
 
                                 </div>
                             </div>
+                          </a>
                         </div>
+                        
                         <div className="col-lg-3 col-sm-6" >
-                            <div className="aim-item pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
-                                <div className="p-4">
-                                    <i className="fas fa-lightbulb fa-2x"></i>
-                                    <h5>Learn</h5>
+                            <a style={{textDecoration: 'none', color: 'black'}} href="#Learn">
+                                <div className="aim-item pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
+                                    <div className="p-4">
+                                        <i className="fas fa-lightbulb fa-2x"></i>
+                                        <h5>Learn</h5>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+                        
 
                         <div className="col-lg-3 col-sm-6  ">
+                          <a style={{textDecoration: 'none', color: 'black'}} href="#Grow">
                             <div className="aim-item pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
                                 <div className="p-4">
                                     <i className="fas fa-trophy fa-2x"></i>
                                     <h5>Grow</h5>
                                 </div>
                             </div>
+                          </a>
                         </div>
 
 

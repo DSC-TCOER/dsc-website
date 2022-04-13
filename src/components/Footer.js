@@ -18,31 +18,37 @@ function Footer() {
                 Pune Rd, Yewalewadi, Pune - 411048
               </p>
               <p className="mb-2 text-center">
-                <i className="fa fa-envelope me-3"></i>dsctcoer2021@gmail.com
+                <a href = "mailto: dsctcoer2021@gmail.com">
+                  <i className="fa fa-envelope me-3"></i>dsctcoer2021@gmail.com
+                </a>
               </p>
               <div
                 className="d-flex pt-2"
                 style={{
-                  width: "127px",
-                  margin: " auto",
                   justifyContent: "center",
                 }}
               >
                 <a
                   className="btn btn-outline-light btn-social text-center"
-                  href=""
+                  href="https://in.linkedin.com/company/google-developer-student-club-tcoer"
+                  target="nt"
+                  style={{fontSize: '1.5rem'}}
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
                   className="btn btn-outline-light btn-social text-center mx-2"
-                  href=""
+                  href="https://www.instagram.com/dsc_tcoer/"
+                  target="nt"
+                  style={{fontSize: '1.5rem'}}
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
                 <a
                   className="btn btn-outline-light btn-social text-center mx"
-                  href=""
+                  href="https://discord.com/invite/X7JXPG8Tmt"
+                  target="nt"
+                  style={{fontSize: '1.5rem'}}
                 >
                   <i className="fab fa-discord"></i>
                 </a>

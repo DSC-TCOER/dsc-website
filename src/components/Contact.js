@@ -1,7 +1,28 @@
 import React from "react";
 import Footer from "./Footer";
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+    toast.promise(() =>  emailjs.sendForm(
+      'service_an3y13o',
+      'template_ds2nvir',
+      e.target,
+      'S3uHVkOSBCXYPk0bZ'
+    ),{
+      pending:"pending",
+      success:"Email sent successfully!",
+      error:"Sorry, something went wrong. Try again later."
+    })
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
+  }
+  
   return (
     <>
       <section id="learn" className="p-5" style={{ background: "#d4d7da" }}>
@@ -20,7 +41,7 @@ const Contact = () => {
               />
             </div>
             <div className="col-md p-5">
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
@@ -28,9 +49,12 @@ const Contact = () => {
                         type="text"
                         className="form-control"
                         id="name"
+                        name="name"
+                        required
                         placeholder="Your Name"
+                        style={{fontSize: '1.5rem'}}
                       />
-                      <label for="name">Your Name</label>
+                      <label style={{fontSize: '1rem'}} for="name">Your Name</label>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -39,9 +63,12 @@ const Contact = () => {
                         type="email"
                         className="form-control"
                         id="email"
+                        name="email"
+                        required
                         placeholder="Your Email"
+                        style={{fontSize: '1.5rem'}}
                       />
-                      <label for="email">Your Email</label>
+                      <label style={{fontSize: '1rem'}} for="email">Your Email</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -50,9 +77,12 @@ const Contact = () => {
                         type="text"
                         className="form-control"
                         id="subject"
+                        name="subject"
+                        required
                         placeholder="Subject"
+                        style={{fontSize: '1.5rem'}}
                       />
-                      <label for="subject">Subject</label>
+                      <label style={{fontSize: '1rem'}} for="subject">Subject</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -61,9 +91,11 @@ const Contact = () => {
                         className="form-control"
                         placeholder="Leave a message here"
                         id="message"
-                        style={{ height: "150px" }}
+                        name="message"
+                        required
+                        style={{ height: "150px", fontSize: '1.5rem' }}
                       ></textarea>
-                      <label for="message">Message</label>
+                      <label style={{fontSize: '1rem'}} for="message">Message</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -77,6 +109,25 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       <Footer />
     </>
   );

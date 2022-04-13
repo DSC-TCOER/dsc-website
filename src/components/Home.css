@@ -16,3 +16,16 @@
     background-color: #4285F4;
     color: white;
 }
+
+.presenting:hover {
+  color: #FBBC04;
+}
+.dsc:hover {
+  color: #EA4335;
+}
+.tcoer:hover {
+  color: #4285F4;
+}
+.pune:hover {
+  color: #34A853;
+} 

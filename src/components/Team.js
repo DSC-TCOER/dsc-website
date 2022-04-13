@@ -17,7 +17,7 @@ export const Team = () => {
           social2=""
           url="./images/team.gif"
           head="The Board of 2021-22"
-          para="Coming together is a beginning, staying together is progress, and working together is success. Great things in business are never done by one person; they're done by a team of people. Success is best when it's shared."
+          para="Coming together is a beginning, staying together is progress, and working together is success. Great things are never done by one person; they're done by a team of people. Success is best when it's shared."
         />
       </div>
 

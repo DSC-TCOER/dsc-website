@@ -115,11 +115,17 @@
       width: 50%;
       margin: auto;
     }
+    .hero img {
+      width: 35rem;
+    }
   }
   @media (max-width: 600px) {
     .card-list-item {
       width: 90%;
       margin: auto;
+    }
+    .hero img {
+      width: 85%
     }
   }
   

@@ -4,7 +4,7 @@ const SubHome = ({ url, para, head, addClass }) => {
   if(addClass == 'odd') {
     return (
       <>
-        <section id="learn" className="p-5">
+        <section id={head} className="p-5">
           <div className="container">
             <div className="row align-items-center justify-content-between">
             <div style={{display: 'flex', justifyContent: 'center'}} className="col-md">
@@ -32,7 +32,7 @@ const SubHome = ({ url, para, head, addClass }) => {
   }
   else return(
       <>
-        <section id="learn" className="p-5">
+        <section id={head} className="p-5">
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-md p-5">
