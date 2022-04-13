@@ -29,6 +29,7 @@ function App() {
         pauseOnHover
       />
       <Router>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh'}}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}>
@@ -50,8 +51,9 @@ function App() {
           </Route>
 
         </Routes>
+        <Footer />
+        </div>
       </Router>
-
     </>
   );
 }

@@ -11,11 +11,12 @@ const Home = () => {
   return (
     <>
       <header className="container col-xxl-8 px-4 py-5">
-        <div style={{justifyContent: 'space-around'}} className='row flex-lg-row-reverse align-items-center g-5 py-5'>
+        <div style={{justifyContent: 'space-around', height: '75vh'}} className='row flex-lg-row-reverse align-items-center g-5 py-5'>
           <div className="col-10 col-sm-8 col-lg-6">
             <model-viewer
               alt="Google Developers logo"
               src='./images/DSC-3D-logo2.glb'
+              poster = './images/dsc-logo.png'
               camera-controls
               environment-image="./images/white.png"
               exposure = '0.5'
@@ -27,10 +28,10 @@ const Home = () => {
             ></model-viewer>
           </div>
           <div className="col-lg-6">
-            <div className="heading">
+            <div style={{textAlign: 'center'}} className="heading">
               <h3 className="presenting">Presenting,</h3>
               <h1><span className="dsc">GDSC</span> <span className="tcoer">TCOER</span> <span className="pune">PUNE</span></h1>
-              <h5 style={{fontWeight: '400', marginBottom: '2rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
+              <h5 style={{fontWeight: '400', marginBottom: '2.5rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"
@@ -46,7 +47,7 @@ const Home = () => {
                 <div className="container">
                     <div className='border-bottom border-5 border-primary px-1' >
 
-                        <h5 style={{fontSize: '1.7rem'}} className=" ff-secondary text-center text-primary fw-normal my-5" >Our Aim</h5>
+                        <h3 className=" ff-secondary text-center text-primary fw-normal my-5" >Our Aim</h3>
                     </div>
                     <div style={{justifyContent: 'center'}} className="row g-4 my-3">
 
@@ -87,7 +88,7 @@ const Home = () => {
 
 
                         <div className='border-bottom border-5 border-primary px-1' >
-                            <h4 style={{fontSize: '1.7rem'}} className=" ff-secondary text-center text-primary fw-normal my-5" >Helping Students Bridge The Gap Between Theory and Practice</h4>
+                            <h3 className=" ff-secondary text-center text-primary fw-normal my-5" >Helping Students Bridge The Gap Between Theory and Practice</h3>
                         </div>
 
                     </div>
@@ -117,7 +118,7 @@ const Home = () => {
         />
       </div>
 
-      <Footer />
+      
     </>
   );
 };

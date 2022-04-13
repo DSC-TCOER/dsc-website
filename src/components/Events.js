@@ -180,7 +180,7 @@ const Events = () => {
         </ul>
       </div>
 
-      <Footer />
+      
     </>
   );
 };
