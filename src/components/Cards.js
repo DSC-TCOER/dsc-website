@@ -17,8 +17,7 @@ function Cards({ name, designation, social, url }) {
             <img
               className="img-fluid"
               src={url}
-              alt=""
-              style={{ height: "198px" }}
+              alt="Profile Picture"
             />
           </div>
           <h5 className="mb-0">{name}</h5>
@@ -30,6 +29,7 @@ function Cards({ name, designation, social, url }) {
               className="btn btn-square btn-primary mx-1 rounded-circle wave"
               href={social}
               target="_blank"
+              style={{marginBottom: '0px'}}
             >
               <i className="fab fa-linkedin-in"></i>
             </a>

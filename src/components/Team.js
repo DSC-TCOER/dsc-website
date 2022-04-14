@@ -208,19 +208,19 @@ export const Team = () => {
                 <div id="tab-3" className="tab-pane   show p-0">
                   <div className="container-xxl pt-5 pb-3">
                     <div className="container">
-                      <div className="row g-4 d-flex justify-content-center">
+                      <div className="d-flex justify-content-center">
                         <Cards
                           name="Mohammad Anas"
                           designation="Events Lead"
-                          social="https://www.linkedin.com/in/mohammad-anas-
-"
+                          social="https://www.linkedin.com/in/mohammad-anas-"
                           url="./images/DSC Team/Events and Management Team/Mohammad Anas.jpg"
                         />
+                      </div>
+                      <div className="row g-4 d-flex justify-content-center">
                         <Cards
                           name="Sakshi Sawant"
                           designation="Management Lead"
-                          social="https://www.linkedin.com/in/sakshi-shankar-sawant-3772431b3
-"
+                          social="https://www.linkedin.com/in/sakshi-shankar-sawant-3772431b3"
                           url="./images/DSC Team/Events and Management Team/sakshi sawant.jpg"
                         />
                         <Cards
@@ -242,8 +242,7 @@ export const Team = () => {
                         <Cards
                           name="Vedant Bhogawade"
                           designation="Technical Lead"
-                          social="https://www.linkedin.com/in/vedantbhogawade-785856193
-"
+                          social="https://www.linkedin.com/in/vedantbhogawade-785856193"
                           url="./images/DSC Team/Technical Team/Vedant Bhogawade.jpeg"
                         />
                       </div>
@@ -251,15 +250,13 @@ export const Team = () => {
                         <Cards
                           name="Aditi Gangadhar"
                           designation="Technical Team Member"
-                          social="https://www.linkedin.com/in/aditi-gangadhar-66009b205
-"
+                          social="https://www.linkedin.com/in/aditi-gangadhar-66009b205"
                           url="./images/DSC Team/Technical Team/Aditi Gangadhar.jpg"
                         />
                         <Cards
                           name="Kaif Khan "
                           designation="Technical Team Member"
-                          social="https://www.linkedin.com/in/kaif-khan-129882202
-"
+                          social="https://www.linkedin.com/in/kaif-khan-129882202"
                           url="./images/DSC Team/Technical Team/Kaif Khan.jpg"
                         />
                       </div>
@@ -275,17 +272,15 @@ export const Team = () => {
                         <Cards
                           name="Raj Thakur"
                           designation="Design And Content Lead"
-                          social="https://www.linkedin.com/in/raj-thakur-2b946a20b
-"
+                          social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
                           url="./images/DSC Team/Content and Design team/Raj Thakur.jpeg"
                         />
                       </div>
                       <div className="row g-4 d-flex justify-content-center">
                         <Cards
-                          name="Iram Sayed"
+                          name="Iram Syed"
                           designation="Design And Content Team Member"
-                          social="https://www.linkedin.com/in/iram-syed-14030a16b
-"
+                          social="https://www.linkedin.com/in/iram-syed-14030a16b"
                           url="./images/DSC Team/Content and Design team/Iram Sayyad.jpeg"
                         />
                         <Cards
@@ -297,8 +292,7 @@ export const Team = () => {
                         <Cards
                           name="Sejal Agarwal"
                           designation="Design And Content Team Member"
-                          social="https://www.linkedin.com/in/sejal-agarwal-24876219a
-"
+                          social="https://www.linkedin.com/in/sejal-agarwal-24876219a"
                           url="./images/DSC Team/Content and Design team/Sejal Agarwal.jpeg"
                         />
                       </div>
