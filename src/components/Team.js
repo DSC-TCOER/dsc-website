@@ -10,7 +10,7 @@ export const Team = () => {
     <>
       <div className="my-3 ">
         <div className="text-center  ">
-          <h1 className="text-cente text-primary  my-5">Our Teams</h1>
+          <h1 className="text-cente text-primary  my-5">Founding Team</h1>
         </div>
 
         <SubHome

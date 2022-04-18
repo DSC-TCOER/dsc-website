@@ -24,13 +24,13 @@ const Home = () => {
               auto-rotate-delay = '1000'
               rotation-per-second = '15deg'
               shadow-intensity = '1'
-              style={{ width: '30rem', height: '25rem', margin: 'auto'}}
+              style={{ width: '30rem', height: '35rem', margin: 'auto'}}
             ></model-viewer>
           </div>
           <div className="col-lg-6">
             <div style={{textAlign: 'center'}} className="heading">
               <h3 className="presenting">Presenting,</h3>
-              <h1><span className="dsc">GDSC</span> <span className="tcoer">TCOER</span> <span className="pune">PUNE</span></h1>
+              <h1><span className="dsc">GDSC</span> <span className="tcoer">TCOER</span> </h1>
               <h5 style={{fontWeight: '400', marginBottom: '2.5rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
