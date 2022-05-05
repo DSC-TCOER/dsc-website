@@ -1,5 +1,3 @@
-
-
 /* Navbar Styles */
 .nav-brand {
   padding: 0rem;
@@ -30,7 +28,10 @@
   border-bottom: 2px solid #1668fe;
 }
 
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
 .aim-item {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
   transition: 0.5s;
@@ -61,7 +62,10 @@
 .team-item:hover img {
   transform: scale(1.1);
 }
-
+.test {
+  display: flex;
+  justify-content: space-between;
+}
 .team-item:hover {
   height: 100%;
 }
@@ -78,10 +82,6 @@
 .teams-nav .active {
   color: white;
 }
-
-
-
-
 
 .fancy {
   width: 150px;

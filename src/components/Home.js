@@ -2,123 +2,201 @@ import React from "react";
 import Footer from "./Footer";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
-import './Home.css'
+import "./Home.css";
 import { useLinkClickHandler } from "react-router-dom";
-
-
+import { Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
+  const onClick = (e) => {
+    console.log(e.currentTarget.className);
+    let targetElem = e.currentTarget.name;
+    document.getElementById("Connect").parentElement.classList.remove("active");
+    document.getElementById("Learn").parentElement.classList.remove("active");
+    document.getElementById("Grow").parentElement.classList.remove("active");
+    var targetElemClass =
+      document.getElementById(targetElem).parentElement.className;
+    document.getElementById(targetElem).parentElement.className =
+      "active " + targetElemClass;
+  };
   return (
     <>
       <header className="container col-xxl-8 px-4 py-5">
-        <div style={{justifyContent: 'space-around', height: '75vh'}} className='row flex-lg-row-reverse align-items-center g-5 py-5'>
+        <div
+          style={{ justifyContent: "space-around", minHeight: "80vh" }}
+          className="row flex-lg-row-reverse align-items-center g-5 py-5"
+        >
           <div className="col-10 col-sm-8 col-lg-6">
             <model-viewer
               alt="Google Developers logo"
-              src='./images/DSC-3D-logo2.glb'
-              poster = './images/dsc-logo.png'
+              src="./images/DSC-3D-logo2.glb"
+              poster="./images/dsc-logo.png"
               camera-controls
+              disable-zoom
               environment-image="./images/white.png"
-              exposure = '0.5'
+              exposure="0.5"
               auto-rotate
-              auto-rotate-delay = '1000'
-              rotation-per-second = '15deg'
-              shadow-intensity = '1'
-              style={{ width: '30rem', height: '35rem', margin: 'auto'}}
+              auto-rotate-delay="1000"
+              rotation-per-second="15deg"
+              shadow-intensity="1"
+              style={{ width: "30rem", height: "35rem", margin: "auto" }}
             ></model-viewer>
           </div>
           <div className="col-lg-6">
-            <div style={{textAlign: 'center'}} className="heading">
-              <h3 className="presenting">Presenting,</h3>
-              <h1><span className="dsc">GDSC</span> <span className="tcoer">TCOER</span> </h1>
-              <h5 style={{fontWeight: '400', marginBottom: '2.5rem', fontSize: '1.6rem'}}> We are a growing community loaded with creative developers and constantly learning members. Join us on a thrilling journey and capture remarkable memories!</h5>
+            <div style={{ textAlign: "center" }} className="heading">
+              <h3>Presenting,</h3>
+              <h1>
+                GDSC TCOER
+                {/* <span className="gdsc">GDSC</span>{" "}
+                <span className="tcoer">TCOER</span> */}
+              </h1>
+              <h5
+                style={{
+                  fontWeight: "400",
+                  marginBottom: "2.5rem",
+                  fontSize: "1.6rem",
+                }}
+              >
+                We are a growing community loaded with creative developers and
+                constantly learning members. Join us on a thrilling journey and
+                capture remarkable memories!
+              </h5>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"
-                className="btn-primary"
+                style={{ textDecoration: "none" }}
               >
-                Become A Member
+                <button className="my-btn-secondary" role="button">
+                  Become A Member
+                </button>
               </a>
             </div>
           </div>
         </div>
       </header>
-      <div className="container-xxl py-5" >
-                <div className="container">
-                    <div className='border-bottom border-5 border-primary px-1' >
-
-                        <h3 className=" ff-secondary text-center text-primary fw-normal my-5" >Our Aim</h3>
-                    </div>
-                    <div style={{justifyContent: 'center'}} className="row g-4 my-3">
-
-                        <div className="col-lg-3 col-sm-6 " >
-                          <a style={{textDecoration: 'none', color: 'black'}} href="#Connect">
-                            <div className="aim-item  pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
-                                <div className="p-4">
-                                    <i className="fas fa-users fa-2x"></i>
-                                    <h5>Connect</h5>
-
-                                </div>
-                            </div>
-                          </a>
-                        </div>
-                        
-                        <div className="col-lg-3 col-sm-6" >
-                            <a style={{textDecoration: 'none', color: 'black'}} href="#Learn">
-                                <div className="aim-item pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
-                                    <div className="p-4">
-                                        <i className="fas fa-lightbulb fa-2x"></i>
-                                        <h5>Learn</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-
-                        <div className="col-lg-3 col-sm-6  ">
-                          <a style={{textDecoration: 'none', color: 'black'}} href="#Grow">
-                            <div className="aim-item pt-3" style={{boxShadow: "0 0 47px rgb(0 0 0 / 43%)", borderRadius: "19px"}}>
-                                <div className="p-4">
-                                    <i className="fas fa-trophy fa-2x"></i>
-                                    <h5>Grow</h5>
-                                </div>
-                            </div>
-                          </a>
-                        </div>
-
-
-                        <div className='border-bottom border-5 border-primary px-1' >
-                            <h3 className=" ff-secondary text-center text-primary fw-normal my-5" >Helping Students Bridge The Gap Between Theory and Practice</h3>
-                        </div>
-
-                    </div>
-                </div>
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="border-bottom border-5 border-primary px-1">
+            <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
+              Our Aim
+            </h3>
+          </div>
+          <div style={{ justifyContent: "center" }} className="row g-4 my-3">
+            <div className="col-lg-3 col-sm-6" style={{ textAlign: "center" }}>
+              <a style={{ textDecoration: "none" }} href="#Connect">
+                <button
+                  style={{
+                    height: "11rem",
+                    width: "11rem",
+                    borderRadius: "50%",
+                  }}
+                  className="my-btn-primary aim-item-btn"
+                  role="button"
+                  name="Connect"
+                  onClick={onClick}
+                >
+                  <div className="aim-item-text">
+                    <i className="fas fa-users fa-2x"></i>
+                    <h4>Connect</h4>
+                  </div>
+                </button>
+              </a>
             </div>
 
-      <div className="">
+            <div className="col-lg-3 col-sm-6" style={{ textAlign: "center" }}>
+              <a style={{ textDecoration: "none" }} href="#Learn">
+                <button
+                  style={{
+                    height: "11rem",
+                    width: "11rem",
+                    borderRadius: "50%",
+                  }}
+                  className="my-btn-primary aim-item-btn"
+                  role="button"
+                  name="Learn"
+                  onClick={onClick}
+                >
+                  <div className="aim-item-text">
+                    <i className="fas fa-lightbulb fa-2x"></i>
+                    <h4>Learn</h4>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div className="col-lg-3 col-sm-6" style={{ textAlign: "center" }}>
+              <a style={{ textDecoration: "none" }} href="#Grow">
+                <button
+                  style={{
+                    height: "11rem",
+                    width: "11rem",
+                    borderRadius: "50%",
+                  }}
+                  className="my-btn-primary aim-item-btn"
+                  role="button"
+                  name="Grow"
+                  onClick={onClick}
+                >
+                  <div className="aim-item-text">
+                    <i className="fas fa-trophy fa-2x"></i>
+                    <h4>Grow</h4>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div className="border-bottom border-5 border-primary px-1">
+              <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
+                Helping Students Bridge The Gap Between Theory and Practice
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Carousel variant="dark">
+        <Carousel.Item>
+          <SubHome2
+            url="./images/connect.gif"
+            para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors."
+            head="Connect"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <SubHome2
+            url="./images/Online-learning.gif"
+            para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person."
+            head="Learn"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <SubHome2
+            url="./images/growth2.gif"
+            para="Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too."
+            head="Grow"
+          />
+        </Carousel.Item>
+      </Carousel>
+
+      {/* <div className="">
         <SubHome2
           url="./images/connect.gif"
           para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors."
           head="Connect"
-          addClass = "odd"
         />
         <div style={{ "background-color": "#d4d7da" }}>
           <SubHome2
             url="./images/Online-learning.gif"
             para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person."
             head="Learn"
-            addClass = "even"
           />
         </div>
         <SubHome2
           url="./images/growth2.gif"
           para="Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too."
           head="Grow"
-          addClass = "odd"
         />
-      </div>
-
-      
+      </div> */}
     </>
   );
 };

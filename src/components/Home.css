@@ -1,31 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fruktur&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fruktur&family=Roboto:wght@700&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
 .btn-primary {
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin: auto;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    color: #4285F4;
-    border: 2.7px solid #4285F4;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    transition: 0.4s;
-    transition-timing-function: cubic-bezier(0.49, 0.08, 0.54, 1.42);
-  }
-.heading a:hover {
-    border: 3px solid #4285F4;
-    background-color: #4285F4;
-    color: white;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4285f4;
+  border: 2.7px solid #4285f4;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.49, 0.08, 0.54, 1.42);
+}
+
+/* Header Styles */
+.heading h1 {
+  max-width: 35rem;
+  font-size: 4rem;
+  padding: 0.5rem 1.5rem;
+  margin: auto;
+  font-family: "Bungee Shade", cursive;
+  text-transform: uppercase;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  /* background-image: linear-gradient(47deg, #4285f4, whitesmoke, #4285f4); */
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: bolder;
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 30%);
+  transition: 0.2s;
+}
+.heading h1:hover {
+  color: whitesmoke;
+  background-color: black;
+  /* background-image: linear-gradient(47deg, #ea4335, #4285f4, #34a853, #fbbc04); */
+  box-shadow: 1px 4px 10px 0px rgb(0 0 0 / 50%);
+  transition-timing-function: cubic-bezier(0.49, 0.08, 0.54, 1.42);
+  transform: scale(1.05);
+}
+
+.heading h1:hover .gdsc {
+  color: #4285f4;
+}
+.heading h1:hover .tcoer {
+  color: #fbbc04;
+}
+
+.heading h3 {
+  text-align: center;
+  /* font-family: "Train One", cursive; */
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.heading h5 {
+  margin-top: 2rem;
 }
 
 .presenting:hover {
-  color: #FBBC04;
+  color: #fbbc04;
 }
 .dsc:hover {
-  color: #EA4335;
+  color: #ea4335;
 }
 .tcoer:hover {
-  color: #4285F4;
+  color: #4285f4;
 }
 .pune:hover {
-  color: #34A853;
-} 
+  color: #34a853;
+}
+
+.aim-item-text {
+  text-align: center;
+  color: black;
+}
+.aim-item-btn:hover .aim-item-text:nth-child(1) {
+  color: white;
+}
