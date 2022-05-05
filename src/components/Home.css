@@ -19,7 +19,7 @@
 /* Header Styles */
 .heading h1 {
   max-width: 35rem;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0.5rem 1.5rem;
   margin: auto;
   font-family: "Bungee Shade", cursive;
@@ -58,6 +58,9 @@
 
 .heading h5 {
   margin-top: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .presenting:hover {

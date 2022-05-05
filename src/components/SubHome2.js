@@ -24,7 +24,7 @@ const SubHome = ({ url, para, head }) => {
             </div>
             <div className="col-md p-5">
               <h2>{head}</h2>
-              <p style={{ fontSize: "1.7rem" }} className="lead">
+              <p style={{ fontSize: "1.3rem" }} className="lead">
                 {para}
               </p>
             </div>
