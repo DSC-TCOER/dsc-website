@@ -1,22 +1,43 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fruktur&family=Roboto:wght@700&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 /* html {
   font-size: 68%;
 } */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --white-color: white;
+    --black-color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black-color: white;
+    --white-color: black;
+  }
+} */
+
 #body {
+  background-attachment: fixed;
   margin: 0;
-  font-family: "Balsamiq Sans", cursive;
+  /* font-family: "Balsamiq Sans", cursive; */
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-size: 1.1rem; */
-  background-image: url(./temp.jpeg);
+  background-image: url(./temp.jpeg) !important;
   background-repeat: repeat;
   animation: slide 10s linear infinite;
 
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
+  color: var(--black-color) !important;
+  /* background-color: var(--white-color) !important; */
 }
 
 body::-webkit-scrollbar {

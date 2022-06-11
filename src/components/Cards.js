@@ -12,13 +12,12 @@ function Cards({ name, designation, social, url }) {
           boxShadow: "0 0 47px rgb(0 0 0 / 43%)",
         }}
       >
-        <div className="team-item text-center rounded overflow-hidden" style={{}}>
+        <div
+          className="team-item text-center rounded overflow-hidden"
+          style={{}}
+        >
           <div className="rounded-circle overflow-hidden  m-4">
-            <img
-              className="img-fluid"
-              src={url}
-              alt="Profile Picture"
-            />
+            <img className="img-fluid" src={url} alt="Profile Picture" />
           </div>
           <h5 className="mb-0">{name}</h5>
           <small>{designation}</small>
@@ -29,7 +28,7 @@ function Cards({ name, designation, social, url }) {
               className="btn btn-square btn-primary mx-1 rounded-circle wave"
               href={social}
               target="_blank"
-              style={{marginBottom: '0px'}}
+              style={{ marginBottom: "0px" }}
             >
               <i className="fab fa-linkedin-in"></i>
             </a>

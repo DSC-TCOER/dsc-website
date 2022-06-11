@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div className="">
-        <div className="container-xxl py-5">
+        <div className="container-xxl">
           <div className="container">
             <div className="row g-5 align-items-center">
               <div className="col-lg-6 ">
@@ -21,9 +21,6 @@ const About = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <h5 className=" ff-secondary text-start text-primary fw-normal border-start  border-5 border-primary px-1">
-                  About Us
-                </h5>
                 <h1 className="mb-4 my-4">
                   Welcome to{" "}
                   <img
@@ -34,10 +31,22 @@ const About = () => {
                   DSC TCOER
                 </h1>
                 <hr></hr>
-                <h2>What is GDSC?</h2><br></br>
-                <h4>Google Developer Student Clubs are community groups for college and university students interested in Google developer technologies.</h4>
+                <h2>What is GDSC?</h2>
                 <br></br>
-                <p>Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. Google Developer Student Clubs is a program supported by Google Developers.</p>
+                <h4>
+                  Google Developer Student Clubs are community groups for
+                  college and university students interested in Google developer
+                  technologies.
+                </h4>
+                <br></br>
+                <p>
+                  Students from all undergraduate or graduate programs with an
+                  interest in growing as a developer are welcome. By joining a
+                  GDSC, students grow their knowledge in a peer-to-peer learning
+                  environment and build solutions for local businesses and their
+                  community. Google Developer Student Clubs is a program
+                  supported by Google Developers.
+                </p>
                 <br></br>
                 <div className="row g-4 mb-4">
                   <div className="col-sm-6">
@@ -74,7 +83,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      
     </>
   );
 };

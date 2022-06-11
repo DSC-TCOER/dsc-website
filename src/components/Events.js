@@ -1,6 +1,5 @@
 import React from "react";
 import "./events.css";
-import Footer from './Footer';
 
 const Events = () => {
   return (
@@ -13,21 +12,26 @@ const Events = () => {
       </header>
 
       <div className="bound">
-        <ul style={{padding: '0px'}} className="cards">
+        <ul style={{ padding: "0px" }} className="cards">
           {/* 9 */}
           <li className="card-list-item">
             <div className="card">
-              <img alt="Event Poster" src="./images/events/9-solutionChallengeInfo.png" />
+              <img
+                alt="Event Poster"
+                src="./images/events/9-solutionChallengeInfo.png"
+              />
               <h2 className="card-title">Solution Challenge 2022</h2>
               <p>
                 A kick-off session of the global hackathon, Solution Challenge.
               </p>
               <a
+                className="my-btn-primary"
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-2022-solution-challenge-info-session/"
-                className="btn-secondary"
                 target="nt"
               >
+                {/* <button className="my-btn-primary" role="button"> */}
                 know more
+                {/* </button> */}
               </a>
             </div>
           </li>
@@ -42,7 +46,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-android-study-jam-session-3/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -60,7 +64,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-android-study-jam-session-2/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -79,7 +83,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-android-study-jam/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -97,7 +101,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-getting-started-with-web-application-security/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -115,7 +119,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-30-days-of-google-cloud-campaign-closure/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -134,7 +138,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-introduction-to-30-days-of-google-cloud/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -152,7 +156,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-getting-into-open-source-with-jina-ai/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -162,7 +166,7 @@ const Events = () => {
           {/* 1 */}
           <li className="card-list-item">
             <div className="card">
-              <img alt="Event Poster" src='./images/events/1-inaugration.jpg' />
+              <img alt="Event Poster" src="./images/events/1-inaugration.jpg" />
               <h2 className="card-title">Inauguration Event</h2>
               <p>
                 Inauguration event for the Developer Students Club chapter of
@@ -170,7 +174,7 @@ const Events = () => {
               </p>
               <a
                 href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-inauguration-event/"
-                className="btn-secondary"
+                className="my-btn-primary"
                 target="nt"
               >
                 know more
@@ -179,8 +183,6 @@ const Events = () => {
           </li>
         </ul>
       </div>
-
-      
     </>
   );
 };

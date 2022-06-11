@@ -1,0 +1,14 @@
+.btt-icon {
+  position: fixed;
+  right: 20px;
+  bottom: -120px;
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 5001;
+
+  transition: 0.5s;
+}

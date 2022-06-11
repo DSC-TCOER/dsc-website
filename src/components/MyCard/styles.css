@@ -1,0 +1,54 @@
+.m-card {
+  height: 100%;
+  padding: 0.5rem;
+  width: 250px;
+  position: relative;
+  margin-block: 0.3rem;
+}
+.m-card-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.m-card-img img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  object-fit: cover;
+}
+.m-card-content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.574);
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  transition: 0.5s;
+  color: white;
+}
+.m-card-name {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+.m-card-designation {
+  font-size: 1rem;
+  text-align: center;
+}
+.m-card:hover .m-card-content {
+  top: 0;
+  cursor: pointer;
+}
+.m-card:hover img {
+  transform: scale(1.1);
+}
+.m-card a {
+  display: block;
+}

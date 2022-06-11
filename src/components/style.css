@@ -11,18 +11,20 @@
 .nav-brand .text {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 0px 15px;
   justify-content: center;
 }
 .nav-brand .club {
-  font-size: 1.5rem;
-  padding-bottom: 3px;
+  font-size: 1.1rem;
+  padding-bottom: 0px;
 }
 .nav-brand .college {
-  font-size: 1.1rem;
+  font-size: 0.75rem;
+  color: gray;
 }
 .nav-item {
   margin: 0px 1rem;
+  white-space: nowrap;
 }
 .navbar-nav .active {
   border-bottom: 2px solid #1668fe;

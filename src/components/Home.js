@@ -1,23 +1,28 @@
 import React from "react";
-import Footer from "./Footer";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
 import "./Home.css";
-import { useLinkClickHandler } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import About from "./About";
 
 const Home = () => {
   const onClick = (e) => {
     console.log(e.currentTarget.className);
+    // let targetElem = e.currentTarget.name;
+    // document.getElementById("Connect").parentElement.classList.remove("active");
+    // document.getElementById("Learn").parentElement.classList.remove("active");
+    // document.getElementById("Grow").parentElement.classList.remove("active");
+    // var targetElemClass =
+    //   document.getElementById(targetElem).parentElement.className;
+    // document.getElementById(targetElem).parentElement.className =
+    //   "active " + targetElemClass;
     let targetElem = e.currentTarget.name;
-    document.getElementById("Connect").parentElement.classList.remove("active");
-    document.getElementById("Learn").parentElement.classList.remove("active");
-    document.getElementById("Grow").parentElement.classList.remove("active");
-    var targetElemClass =
-      document.getElementById(targetElem).parentElement.className;
-    document.getElementById(targetElem).parentElement.className =
-      "active " + targetElemClass;
+    var slideButton = document.querySelector(
+      `button[aria-label="${targetElem}"]`
+    );
+    slideButton.click();
+    console.log(slideButton);
   };
   return (
     <>
@@ -39,7 +44,7 @@ const Home = () => {
               auto-rotate-delay="1000"
               rotation-per-second="15deg"
               shadow-intensity="1"
-              style={{ width: "30rem", height: "35rem", margin: "auto" }}
+              style={{ width: "30rem", height: "400px", margin: "auto" }}
             ></model-viewer>
           </div>
           <div className="col-lg-6">
@@ -50,17 +55,11 @@ const Home = () => {
                 {/* <span className="gdsc">GDSC</span>{" "}
                 <span className="tcoer">TCOER</span> */}
               </h1>
-              <h5
-                style={{
-                  fontWeight: "400",
-                  marginBottom: "2.5rem",
-                  fontSize: "1.6rem",
-                }}
-              >
+              <p className="mt-3">
                 We are a growing community loaded with creative developers and
                 constantly learning members. Join us on a thrilling journey and
                 capture remarkable memories!
-              </h5>
+              </p>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"
@@ -74,13 +73,11 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <div className="container-xxl py-5">
+      <div className="container-xxl">
         <div className="container">
-          <div className="border-bottom border-5 border-primary px-1">
-            <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
-              Our Aim
-            </h3>
-          </div>
+          <h1 className=" ff-secondary text-center text-primary fw-normal my-5">
+            Our Aim
+          </h1>
           <div style={{ justifyContent: "center" }} className="row g-4 my-3">
             <div className="col-lg-3 col-sm-6" style={{ textAlign: "center" }}>
               <a style={{ textDecoration: "none" }} href="#Connect">
@@ -92,7 +89,7 @@ const Home = () => {
                   }}
                   className="my-btn-primary aim-item-btn"
                   role="button"
-                  name="Connect"
+                  name="Slide 1"
                   onClick={onClick}
                 >
                   <div className="aim-item-text">
@@ -113,7 +110,7 @@ const Home = () => {
                   }}
                   className="my-btn-primary aim-item-btn"
                   role="button"
-                  name="Learn"
+                  name="Slide 2"
                   onClick={onClick}
                 >
                   <div className="aim-item-text">
@@ -134,7 +131,7 @@ const Home = () => {
                   }}
                   className="my-btn-primary aim-item-btn"
                   role="button"
-                  name="Grow"
+                  name="Slide 3"
                   onClick={onClick}
                 >
                   <div className="aim-item-text">
@@ -145,31 +142,29 @@ const Home = () => {
               </a>
             </div>
 
-            <div className="border-bottom border-5 border-primary px-1">
-              <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
-                Helping Students Bridge The Gap Between Theory and Practice
-              </h3>
-            </div>
+            <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
+              Helping Students Bridge The Gap Between Theory and Practice
+            </h3>
           </div>
         </div>
       </div>
 
       <Carousel variant="dark">
-        <Carousel.Item>
+        <Carousel.Item interval={2500}>
           <SubHome2
             url="./images/connect.gif"
             para="Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors."
             head="Connect"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={2500}>
           <SubHome2
             url="./images/Online-learning.gif"
             para="Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person."
             head="Learn"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={2500}>
           <SubHome2
             url="./images/growth2.gif"
             para="Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too."
@@ -177,6 +172,20 @@ const Home = () => {
           />
         </Carousel.Item>
       </Carousel>
+
+      <div
+        style={{
+          margin: "10rem 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h2 className=" ff-secondary text-primary fw-normal border-start  border-5 border-primary px-1">
+          About Us
+        </h2>
+        <About />
+      </div>
 
       {/* <div className="">
         <SubHome2

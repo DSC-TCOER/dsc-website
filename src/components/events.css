@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 a {
+  color: #0060b6;
   text-decoration: none;
 }
+/* a:hover {
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+} */
 li {
   list-style: none;
 }
@@ -71,11 +77,12 @@ li {
   font-size: 2rem;
   font-weight: 600;
   padding-top: 1rem;
+  padding-inline: 8px;
   min-height: 4ch;
 }
 .card p {
   line-height: 1.2;
-  font-size: 1.7rem;
+  font-size: 1rem;
   text-align: center;
   color: gray;
   padding: 0.5rem 1.7rem;
@@ -91,13 +98,13 @@ li {
   color: #6c63ff;
   border: 3px solid #6c63ff;
   border-radius: 1.5rem;
+
   margin-bottom: 1.5rem;
   transition: 0.4s;
   transition-timing-function: cubic-bezier(0.49, 0.08, 0.54, 1.42);
 }
-.card a:hover {
-  border: 3px solid #6c63ff;
-  background-color: #6c63ff;
+.card a {
+  font-size: 1.6rem;
   color: white;
 }
 

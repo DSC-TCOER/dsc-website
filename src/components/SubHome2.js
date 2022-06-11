@@ -18,7 +18,8 @@ const SubHome = ({ url, para, head }) => {
                   borderRadius: "44px",
                   marginTop: "6px",
                   marginBottom: "6px",
-                  width: "45rem",
+                  width: "25rem",
+                  height: "20rem",
                 }}
               />
             </div>

@@ -1,18 +1,42 @@
-.App {
-  text-align: center;
+div,
+p,
+span {
+  cursor: default;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+/* Dark Mode Settings */
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --white-color: white;
+    --black-color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black-color: white;
+    --white-color: black;
+  }
+} */
+/* 
+html body#body * {
+  color: var(--black-color) !important;
+  background-color: var(--white-color) !important;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  font-weight: 400 !important;
+  color: black;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -48,6 +72,8 @@
   );
   border: 0;
   border-radius: 6px;
+  border-radius: 0 0 1.5rem 1.5rem;
+
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   box-sizing: border-box;
@@ -131,4 +157,7 @@
 .my-btn-secondary:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+.baseline {
+  height: 70px;
 }
