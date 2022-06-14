@@ -5,6 +5,7 @@ import "./Home.css";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
+import HallOfFame from "./HallOfFame";
 
 const Home = () => {
   const onClick = (e) => {
@@ -26,7 +27,7 @@ const Home = () => {
   };
   return (
     <>
-      <header className="container col-xxl-8 px-4 py-5">
+      <header className="col-xxl-8 px-4 py-5">
         <div
           style={{ justifyContent: "space-around", minHeight: "80vh" }}
           className="row flex-lg-row-reverse align-items-center g-5 py-5"
@@ -65,7 +66,7 @@ const Home = () => {
                 target="nt"
                 style={{ textDecoration: "none" }}
               >
-                <button className="my-btn-secondary" role="button">
+                <button className="my-btn-primary" role="button">
                   Become A Member
                 </button>
               </a>
@@ -181,7 +182,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h2 className=" ff-secondary text-primary fw-normal border-start  border-5 border-primary px-1">
+        <h2 className=" ff-secondary text-primary fw-normal border-start  border-4 border-primary px-1">
           About Us
         </h2>
         <About />
@@ -206,6 +207,21 @@ const Home = () => {
           head="Grow"
         />
       </div> */}
+
+      <div
+        style={{
+          margin: "10rem 0 2rem 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h2 className=" ff-secondary text-primary fw-normal border-start  border-4 border-primary px-1">
+          Hall Of Fame
+        </h2>
+      </div>
+
+      <HallOfFame />
     </>
   );
 };

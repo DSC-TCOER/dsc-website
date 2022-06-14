@@ -3,7 +3,7 @@ import React from "react";
 const SubHome = ({ url, para, head }) => {
   return (
     <>
-      <section id={head} style={{ marginInline: "5rem" }} className="p-5">
+      <section id={head} className="p-5">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div

@@ -83,3 +83,13 @@
 .aim-item-btn:hover .aim-item-text:nth-child(1) {
   color: white;
 }
+
+.react-photo-album--row {
+  justify-content: space-around !important;
+}
+
+.react-photo-album--row img {
+  box-shadow: 1px 1px 10px #0000005e;
+  padding: 0.5rem;
+  margin: 0px 0.5rem;
+}

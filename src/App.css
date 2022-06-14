@@ -7,7 +7,12 @@ span {
   height: 40vmin;
   pointer-events: none;
 }
-
+.dark-mode *:not(img) {
+  filter: invert(1);
+}
+.dark-mode img {
+  filter: invert(1);
+}
 /* Dark Mode Settings */
 /* @media (prefers-color-scheme: light) {
   :root {

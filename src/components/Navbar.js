@@ -1,19 +1,27 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 // import $ from 'jquery';
 
 const Navbar = () => {
   const ref = useRef();
-
+  useEffect(() => {
+    const tab = localStorage.getItem("tab");
+    const currentTab = document.querySelector(`.nav-link[name = '${tab}']`);
+    currentTab.classList.add("active");
+    console.log(currentTab);
+  }, []);
+  const BackToTopHandler = (e) => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   function navItemsHandler(e) {
-    const BackToTopHandler = (e) => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    };
+    const tab = e.target.href.split("/").slice(-1)[0].toLowerCase();
+    localStorage.setItem("tab", tab);
+
     setTimeout(() => BackToTopHandler(), 50);
     var elems = document.querySelector(".active");
     if (elems !== null) {
@@ -24,11 +32,11 @@ const Navbar = () => {
     } else e.target.className += " active";
     ref.current.classList.remove("show");
   }
-
-  // $('.navbar-nav>li>a').on('click', function(){
-  //     $('.navbar-collapse').collapse('hide');
-  // });
-
+  const toggleDarkMode = () => {
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+    console.log(body);
+  };
   return (
     <>
       <nav
@@ -85,25 +93,36 @@ const Navbar = () => {
               }}
               className="navbar-nav me-auto mb-2 mb-lg-0"
             >
-              <li className="nav-item active" onClick={navItemsHandler}>
-                <Link className="nav-link" aria-current="page" to="/">
+              <li className="nav-item" onClick={navItemsHandler}>
+                <Link
+                  // activeClassName="active"
+                  className="nav-link"
+                  aria-current="page"
+                  name=""
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item" onClick={navItemsHandler}>
-                <Link className="nav-link" to="/Team">
+                <Link className="nav-link" to="/Team" name="team">
                   Teams
                 </Link>
               </li>
               <li className="nav-item" onClick={navItemsHandler}>
-                <Link className="nav-link" to="/events">
+                <Link className="nav-link" to="/events" name="events">
                   Events
                 </Link>
               </li>
               <li className="nav-item" onClick={navItemsHandler}>
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact" name="contact">
                   Contact Us
                 </Link>
+              </li>
+              <li className="nav-item">
+                <div className="nav-link" onClick={toggleDarkMode}>
+                  Dark Mode
+                </div>
               </li>
             </ul>
           </div>
