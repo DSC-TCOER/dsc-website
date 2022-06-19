@@ -18,7 +18,10 @@ function Footer() {
                 Pune Rd, Yewalewadi, Pune - 411048
               </p>
               <p className="mb-2 text-center">
-                <a href = "mailto: dsctcoer2021@gmail.com">
+                <a
+                  className="text-primary"
+                  href="mailto: dsctcoer2021@gmail.com"
+                >
                   <i className="fa fa-envelope me-3"></i>dsctcoer2021@gmail.com
                 </a>
               </p>
@@ -32,7 +35,7 @@ function Footer() {
                   className="btn btn-outline-light btn-social text-center"
                   href="https://in.linkedin.com/company/google-developer-student-club-tcoer"
                   target="nt"
-                  style={{fontSize: '1.5rem'}}
+                  style={{ fontSize: "1.5rem" }}
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
@@ -40,7 +43,7 @@ function Footer() {
                   className="btn btn-outline-light btn-social text-center mx-2"
                   href="https://www.instagram.com/dsc_tcoer/"
                   target="nt"
-                  style={{fontSize: '1.5rem'}}
+                  style={{ fontSize: "1.5rem" }}
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
@@ -48,7 +51,7 @@ function Footer() {
                   className="btn btn-outline-light btn-social text-center mx"
                   href="https://discord.com/invite/X7JXPG8Tmt"
                   target="nt"
-                  style={{fontSize: '1.5rem'}}
+                  style={{ fontSize: "1.5rem" }}
                 >
                   <i className="fab fa-discord"></i>
                 </a>
@@ -71,7 +74,9 @@ function Footer() {
                 All Right Reserved.
               </div>
               <p className="text-center">
-                <a href="#">Back to top</a>
+                <a className="text-primary" href="#">
+                  Back to top
+                </a>
               </p>
             </div>
           </div>

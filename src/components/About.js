@@ -15,7 +15,7 @@ const About = () => {
                       src="./images/homeIntro.gif"
                       className="img-fluid"
                       alt=""
-                      style={{ borderRadius: "140px" }}
+                      style={{ borderRadius: "3rem" }}
                     />
                   </div>
                 </div>

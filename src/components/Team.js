@@ -137,16 +137,16 @@ export const Team = () => {
                 url="./images/DSC Team/Technical Team/Vedant Bhogawade.jpeg"
               />
               <MyCard
-                name="Raj Thakur"
-                designation="Design And Content Lead"
-                social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
-                url="./images/DSC Team/Content and Design team/Raj Thakur.jpeg"
-              />
-              <MyCard
                 name="Mohammed Ali Inamdaar"
                 designation="Android Lead"
                 social="https://www.linkedin.com/in/mohammedaliinamdar"
                 url="./images/DSC Team/Android Team/Mohammed Ali.jpg"
+              />
+              <MyCard
+                name="Tanmay Shinde"
+                designation="Web Lead"
+                social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
+                url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
               />
               <MyCard
                 name="Mohammad Anas"
@@ -155,10 +155,10 @@ export const Team = () => {
                 url="./images/DSC Team/Events and Management Team/Mohammad Anas.jpg"
               />
               <MyCard
-                name="Tanmay Shinde"
-                designation="Web Lead"
-                social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
-                url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
+                name="Raj Thakur"
+                designation="Design And Content Lead"
+                social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
+                url="./images/DSC Team/Content and Design team/Raj Thakur.jpeg"
               />
               <MyCard
                 name="Sakshi Sawant"
@@ -326,14 +326,14 @@ export const Team = () => {
               className="row g-4 d-flex justify-content-center"
             >
               <MyCard
-                name="Tanmay Shinde"
-                social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
-                url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
-              />
-              <MyCard
                 name="Sachin Jha"
                 social="https://www.linkedin.com/in/sachin-jha-992179217"
                 url="./images/DSC Team/Web Team/sachin Jha.jpeg"
+              />
+              <MyCard
+                name="Tanmay Shinde"
+                social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
+                url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
               />
               <MyCard
                 name="Kaustubh Trivedi"

@@ -6,9 +6,12 @@
   background-color: royalblue;
   color: white;
   padding: 0.3rem;
-  border-radius: 10px;
+  border-radius: 50%;
   opacity: 0;
   z-index: 5001;
+  width: 40px;
+  height: 40px;
+  text-align: center;
 
   transition: 0.5s;
 }

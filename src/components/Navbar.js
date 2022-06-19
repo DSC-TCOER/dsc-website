@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const ref = useRef();
   useEffect(() => {
-    const tab = localStorage.getItem("tab");
+    const tab = window.location.href.split("/").slice(-1)[0].toLowerCase();
     const currentTab = document.querySelector(`.nav-link[name = '${tab}']`);
     currentTab.classList.add("active");
     console.log(currentTab);
   }, []);
+
   const BackToTopHandler = (e) => {
     window.scrollTo({
       top: 0,
@@ -20,7 +21,6 @@ const Navbar = () => {
   };
   function navItemsHandler(e) {
     const tab = e.target.href.split("/").slice(-1)[0].toLowerCase();
-    localStorage.setItem("tab", tab);
 
     setTimeout(() => BackToTopHandler(), 50);
     var elems = document.querySelector(".active");
@@ -32,17 +32,18 @@ const Navbar = () => {
     } else e.target.className += " active";
     ref.current.classList.remove("show");
   }
-  const toggleDarkMode = () => {
-    let body = document.body;
-    body.classList.toggle("dark-mode");
-    console.log(body);
-  };
+  // const toggleDarkMode = () => {
+  //   let body = document.body;
+  //   body.classList.toggle("dark-mode");
+  //   console.log(body);
+  // };
   return (
     <>
       <nav
         style={{
           boxShadow:
             "0 0.9px 2.2px rgba(0, 0, 0, 0.039), 0 2.2px 5.3px rgba(0, 0, 0, 0.048), 0 4.1px 10px rgba(0, 0, 0, 0.052), 0 7.4px 17.9px rgba(0, 0, 0, 0.057), 0 13.8px 33.4px rgba(0, 0, 0, 0.067),0 33px 80px rgba(0, 0, 0, 0.11)",
+          padding: "0px",
         }}
         className="navbar fixed-top navbar-expand-lg navbar-light bg-light "
       >
@@ -119,11 +120,11 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <div className="nav-link" onClick={toggleDarkMode}>
                   Dark Mode
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

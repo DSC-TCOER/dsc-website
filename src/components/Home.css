@@ -93,3 +93,13 @@
   padding: 0.5rem;
   margin: 0px 0.5rem;
 }
+
+/* 3d model width */
+.model-3d {
+  width: 30rem;
+}
+@media (max-width: 600px) {
+  .model-3d {
+    width: 80%;
+  }
+}

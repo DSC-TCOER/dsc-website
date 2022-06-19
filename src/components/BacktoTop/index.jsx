@@ -10,7 +10,10 @@ const BackToTop = () => {
   };
   return (
     <div className="btt-icon" onClick={BackToTopHandler}>
-      <i className="fa-solid fa-arrow-up"></i>
+      <i
+        style={{ fontSize: "24px", padding: "2px" }}
+        className="fa fa-solid fa-arrow-up"
+      ></i>
     </div>
   );
 };

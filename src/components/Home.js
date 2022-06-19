@@ -27,7 +27,7 @@ const Home = () => {
   };
   return (
     <>
-      <header className="col-xxl-8 px-4 py-5">
+      <header style={{ margin: "auto" }} className="col-xxl-8 py-5">
         <div
           style={{ justifyContent: "space-around", minHeight: "80vh" }}
           className="row flex-lg-row-reverse align-items-center g-5 py-5"
@@ -45,7 +45,8 @@ const Home = () => {
               auto-rotate-delay="1000"
               rotation-per-second="15deg"
               shadow-intensity="1"
-              style={{ width: "30rem", height: "400px", margin: "auto" }}
+              style={{ height: "400px", margin: "auto" }}
+              className="model-3d"
             ></model-viewer>
           </div>
           <div className="col-lg-6">
