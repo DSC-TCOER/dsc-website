@@ -69,7 +69,7 @@ function Footer() {
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   {" "}
-                  &copy; www.dsctcoer.com
+                  &copy; www.dsc-tcoer-pune.web.app
                 </a>{" "}
                 All Right Reserved.
               </div>
