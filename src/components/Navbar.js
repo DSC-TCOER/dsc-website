@@ -59,7 +59,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          {/* To Be changed */}
         </Link>
         {/* Responsive button Part start */}
         <button

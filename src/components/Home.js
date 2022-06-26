@@ -33,24 +33,35 @@ const Home = () => {
           className="row flex-lg-row-reverse align-items-center g-5 py-5"
         >
           <div className="col-10 col-sm-8 col-lg-6">
-            <model-viewer
-              alt="Google Developers logo"
-              src="./images/DSC-3D-logo2.glb"
-              poster="./images/dsc-logo.png"
-              camera-controls
-              disable-zoom
-              environment-image="./images/white.png"
-              exposure="0.5"
-              auto-rotate
-              auto-rotate-delay="1000"
-              rotation-per-second="15deg"
-              shadow-intensity="1"
-              style={{ height: "400px", margin: "auto" }}
-              className="model-3d"
-            ></model-viewer>
+            {window.matchMedia("only screen and (max-width: 760px)").matches ? (
+              <img
+                src="./dsc-3d-logo-img.png"
+                style={{ width: "90%", margin: "auto" }}
+                alt="DSC TCOER Logo"
+              ></img>
+            ) : (
+              <model-viewer
+                alt="Google Developers logo"
+                src="./images/DSC-3D-logo2.glb"
+                poster="./images/dsc-logo.png"
+                camera-controls
+                disable-zoom
+                environment-image="./images/white.png"
+                exposure="0.5"
+                auto-rotate
+                auto-rotate-delay="1000"
+                rotation-per-second="15deg"
+                shadow-intensity="1"
+                style={{ height: "400px", margin: "auto" }}
+                className="model-3d"
+              ></model-viewer>
+            )}
           </div>
           <div className="col-lg-6">
-            <div style={{ textAlign: "center" }} className="heading">
+            <div
+              style={{ textAlign: "center", width: "80%", margin: "auto" }}
+              className="heading"
+            >
               <h3>Presenting,</h3>
               <h1>
                 GDSC TCOER

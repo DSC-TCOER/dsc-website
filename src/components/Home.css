@@ -98,8 +98,18 @@
 .model-3d {
   width: 30rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .model-3d {
     width: 80%;
+  }
+  .react-photo-album--row img {
+    box-shadow: 1px 1px 10px #0000005e;
+    padding: 0.5rem;
+    margin: 0px;
+    margin-left: 8px;
+  }
+  header {
+    width: 90%;
+    margin: auto;
   }
 }

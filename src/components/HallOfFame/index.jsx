@@ -27,7 +27,6 @@ const photos = [
     src: "./images/hallOfFame/gaurang_gsoc.webp",
     width: 1080,
     height: 800,
-    style: "border: 10px solid black;k",
   },
   {
     src: "./images/hallOfFame/impact_pos_1.webp",

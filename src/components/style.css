@@ -101,3 +101,19 @@
     )
     5;
 }
+
+@media (max-width: 760px) {
+  .nav-brand {
+    padding-left: 8px;
+  }
+  .nav-brand img {
+    width: 2rem;
+  }
+  .nav-brand .text {
+    padding: 0px;
+    padding-left: 7px;
+  }
+  .nav-brand .text .club {
+    font-size: 1rem;
+  }
+}
