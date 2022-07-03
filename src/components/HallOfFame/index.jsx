@@ -26,6 +26,11 @@ const photos = [
   {
     src: "./images/hallOfFame/gaurang_gsoc.webp",
     width: 1080,
+    height: 1090,
+  },
+  {
+    src: "./images/hallOfFame/dsc-news.jpg",
+    width: 1080,
     height: 800,
   },
   {
@@ -44,7 +49,7 @@ const photos = [
     height: 607,
   },
   {
-    src: "./images/hallOfFame/impact2.webp",
+    src: "./images/hallOfFame/impact2.jpg",
     width: 1080,
     height: 720,
   },
@@ -54,17 +59,22 @@ const photos = [
     height: 607,
   },
   {
-    src: "./images/hallOfFame/impact3.webp",
+    src: "./images/hallOfFame/impact3.jpg",
     width: 1080,
     height: 720,
   },
   {
-    src: "./images/hallOfFame/impact4.webp",
+    src: "./images/hallOfFame/impact4.jpg",
     width: 1240,
     height: 800,
   },
   {
-    src: "./images/hallOfFame/flutter1.webp",
+    src: "./images/hallOfFame/impact5.jpg",
+    width: 1240,
+    height: 760,
+  },
+  {
+    src: "./images/hallOfFame/flutter1.jpg",
     width: 1080,
     height: 840,
   },
@@ -74,34 +84,54 @@ const photos = [
     height: 1200,
   },
   {
-    src: "./images/hallOfFame/flutter3.webp",
+    src: "./images/hallOfFame/flutter3.jpg",
     width: 1080,
     height: 720,
   },
   {
-    src: "./images/hallOfFame/flutter4.png",
+    src: "./images/hallOfFame/flutter4.jpg",
     width: 1080,
     height: 1200,
   },
   {
-    src: "./images/hallOfFame/flutter5.webp",
+    src: "./images/hallOfFame/flutter5.jpg",
     width: 1080,
     height: 720,
   },
   {
-    src: "./images/hallOfFame/flutter6.png",
+    src: "./images/hallOfFame/flutter6.jpg",
     width: 1080,
     height: 1200,
   },
   {
-    src: "./images/hallOfFame/flutter7.webp",
+    src: "./images/hallOfFame/flutter7.jpg",
     width: 1080,
     height: 810,
   },
   {
-    src: "./images/hallOfFame/flutter8.png",
+    src: "./images/hallOfFame/flutter8.jpg",
     width: 1080,
-    height: 1380,
+    height: 1200,
+  },
+  {
+    src: "./images/hallOfFame/flutter9.jpg",
+    width: 1080,
+    height: 840,
+  },
+  {
+    src: "./images/hallOfFame/flutter10.jpg",
+    width: 1080,
+    height: 1200,
+  },
+  {
+    src: "./images/hallOfFame/flutter11.jpg",
+    width: 1080,
+    height: 840,
+  },
+  {
+    src: "./images/hallOfFame/flutter12.jpg",
+    width: 1240,
+    height: 800,
   },
   {
     src: "./images/hallOfFame/cloud1.jpg",

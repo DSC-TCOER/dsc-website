@@ -112,7 +112,7 @@ export const Team = () => {
                 name="Zahra Dehghan"
                 designation="GDSC TCOER founding Lead"
                 social="https://www.linkedin.com/in/zahra-dehghan-8ab05b193"
-                url="./images/DSC Team/Zahra.jpg"
+                url="./images/DSC Team/Zahra.png"
               />
             </div>
 
@@ -134,7 +134,7 @@ export const Team = () => {
                 name="Vedant Bhogawade"
                 designation="Technical Lead"
                 social="https://www.linkedin.com/in/vedantbhogawade-785856193"
-                url="./images/DSC Team/Technical Team/Vedant Bhogawade.jpeg"
+                url="./images/DSC Team/Technical Team/Vedant Bhogawade.png"
               />
               <MyCard
                 name="Mohammed Ali Inamdaar"
@@ -146,7 +146,7 @@ export const Team = () => {
                 name="Tanmay Shinde"
                 designation="Web Lead"
                 social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
-                url="./images/DSC Team/Web Team/Tanmay Shinde.jpg"
+                url="./images/DSC Team/Web Team/Tanmay-dsc.png"
               />
               <MyCard
                 name="Mohammad Anas"

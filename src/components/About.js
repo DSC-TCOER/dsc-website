@@ -59,7 +59,7 @@ const About = () => {
                         className="flex-shrink-0 display-5 text-primary mb-0 mx-3"
                         data-toggle="counter-up"
                       >
-                        17
+                        20
                       </h1>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const About = () => {
                         className="flex-shrink-0 display-5 text-primary mb-0 mx-3"
                         data-toggle="counter-up"
                       >
-                        520+
+                        540+
                       </h1>
                     </div>
                   </div>
