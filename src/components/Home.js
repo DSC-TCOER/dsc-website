@@ -228,7 +228,7 @@ const Home = () => {
         }}
       >
         <h2 className=" ff-secondary text-primary fw-normal border-start  border-4 border-primary px-1">
-          Hall Of Fame
+          Hall Of Fame 🏆
         </h2>
       </div>
 
