@@ -28,8 +28,8 @@ const Bar = () => {
           >
             <i className="fab fa-chrome fa-2x"></i>
             <div className="ps-3">
-              <h6>Team</h6>
               <h5 className="mt-n1 mb-0">Web</h5>
+              <h6>Team</h6>
             </div>
           </a>
         </li>
@@ -41,8 +41,8 @@ const Bar = () => {
           >
             <i className="fas fa-magic fa-2x "></i>
             <div className="ps-3">
-              <h6>Team</h6>
               <h5 className="mt-n1 mb-0">Design</h5>
+              <h6>Team</h6>
             </div>
           </a>
         </li>
@@ -54,8 +54,8 @@ const Bar = () => {
           >
             <i className="fas fa-cogs fa-2x "></i>
             <div className="ps-3">
-              <h6>Team</h6>
               <h5 className="mt-n1 mb-0">Technical</h5>
+              <h6>Team</h6>
             </div>
           </a>
         </li>
@@ -67,8 +67,8 @@ const Bar = () => {
           >
             <i className="fab fa-android fa-2x"></i>
             <div className="ps-3">
-              <h6>Team</h6>
               <h5 className="mt-n1 mb-0">Android</h5>
+              <h6>Team</h6>
             </div>
           </a>
         </li>
@@ -82,15 +82,37 @@ export const Team = () => {
     <>
       <div className="my-3 ">
         <div className="text-center  ">
-          <h1 className="text-cente text-primary  my-5">Founding Team</h1>
+          <h1 className="text-cente text-primary  my-3">Founding Team</h1>
         </div>
-
-        <SubHome
-          social2=""
-          url="./images/team.gif"
-          head="The Board of 2021-22"
-          para="Coming together is a beginning, staying together is progress, and working together is success. Great things are never done by one person; they're done by a team of people. Success is best when it's shared."
-        />
+        <section id="learn" className="p-5" style={{ background: "#d4d7da" }}>
+        <div className="container">
+          <div
+            className="row align-items-center justify-content-between"
+            style={{ padding: "2rem" }}
+          >
+            <div style={{ textAlign: "right" }} className="col-md">
+              <img
+                src="./images/team.gif"
+                className="img-fluid"
+                alt=""
+                style={{ borderRadius: "3rem", width: "40rem" }}
+              />
+            </div>
+            <div
+              id="need-responsive"
+              className="col-md"
+              style={{ padding: "2rem 0.5rem" }}
+            >
+              <h2 >The Board of 2021-22</h2>
+              <h2 className="lead"><em>"“Coming together is a beginning, staying together is progress, and working together is success.”</em> ~ Henry Ford<br></br>
+          <br></br>We at Google Developer Student Club, TCOER believe that what a strong group of people can accomplish together is much larger and far greater than what an individual can achieve alone.
+          Our Core team has left no stone unturned and constantly worked to help each member grow by sharing useful learning resources, organizing events on different technologies and providing guidance for exploring various domains of their interest."
+          </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+       
       </div>
 
       <div className="">
@@ -178,7 +200,7 @@ export const Team = () => {
               style={{ width: "50%", margin: "auto", marginTop: "6rem" }}
               className="text-center border-bottom border-3 border-primary px-1"
             >
-              <h2 className="text-primary">Domain Members</h2>
+              <h2 className="text-primary">Volunteering Members</h2>
             </div>
             <div className="tab-class text-center my-5">
               <Bar />

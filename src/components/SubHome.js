@@ -24,7 +24,7 @@ const SubHome = ({ url, para, head }) => {
               style={{ padding: "2rem 0.5rem" }}
             >
               <h2 style={{fontSize: '2.5rem'}}>{head}</h2>
-              <p style={{fontSize: '1.6rem'}} className="lead">{para}</p>
+              <p style={{fontSize: '19px'}} className="lead">{para}</p>
             </div>
           </div>
         </div>

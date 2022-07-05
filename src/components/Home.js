@@ -34,7 +34,7 @@ const Home = () => {
         >
           <div className="col-10 col-sm-8 col-lg-6">
             {window.matchMedia("only screen and (max-width: 760px)").matches ? (
-              <img
+              <img className="d-block mx-auto"
                 src="./dsc-3d-logo-img.png"
                 style={{ width: "90%", margin: "auto" }}
                 alt="DSC TCOER Logo"
@@ -68,11 +68,10 @@ const Home = () => {
                 {/* <span className="gdsc">GDSC</span>{" "}
                 <span className="tcoer">TCOER</span> */}
               </h1>
-              <p className="mt-3">
-                We are a growing community loaded with creative developers and
-                constantly learning members. Join us on a thrilling journey and
-                capture remarkable memories!
+              <p className="mt-3 ">
+                We are a growing community loaded with creative developers who are passionate about creating an impact by exploring different technologies and building meaningful projects that solve real world problems.
               </p>
+              <p>Join us on this thrilling journey!! Let's capture remarkable memories together ✨</p>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"
