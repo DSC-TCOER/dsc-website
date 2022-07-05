@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
 import "./Home.css";
@@ -25,6 +25,7 @@ const Home = () => {
     slideButton.click();
     console.log(slideButton);
   };
+  const [hideModel, setHideModel] = useState(true);
   return (
     <>
       <header style={{ margin: "auto" }} className="col-xxl-8 py-5">
@@ -32,13 +33,50 @@ const Home = () => {
           style={{ justifyContent: "space-around", minHeight: "80vh" }}
           className="row flex-lg-row-reverse align-items-center g-5 py-5"
         >
-          <div className="col-10 col-sm-8 col-lg-6">
+          <div
+            style={hideModel ? {} : { padding: "0px" }}
+            className="col-10 col-sm-8 col-lg-6"
+          >
             {window.matchMedia("only screen and (max-width: 760px)").matches ? (
-              <img className="d-block mx-auto"
-                src="./dsc-3d-logo-img.png"
-                style={{ width: "90%", margin: "auto" }}
-                alt="DSC TCOER Logo"
-              ></img>
+              <>
+                {hideModel ? (
+                  <div style={{ height: "175px" }}>
+                    <img
+                      className="d-block mx-auto"
+                      src="./dsc-3d-logo-img2.png"
+                      style={{ width: "90%", margin: "auto" }}
+                      alt="DSC TCOER Logo"
+                    ></img>
+                  </div>
+                ) : (
+                  <model-viewer
+                    alt="Google Developers logo"
+                    src="./images/DSC-3D-logo2.glb"
+                    poster="./images/dsc-logo.png"
+                    camera-controls
+                    disable-zoom
+                    environment-image="./images/white.png"
+                    exposure="0.5"
+                    auto-rotate
+                    auto-rotate-delay="1000"
+                    rotation-per-second="15deg"
+                    shadow-intensity="1"
+                    style={{ height: "175px", width: "80%", margin: "auto" }}
+                    className="model-3d"
+                  ></model-viewer>
+                )}
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <button
+                    onClick={() => {
+                      setHideModel(!hideModel);
+                    }}
+                    className="my-btn-secondary"
+                    role="button"
+                  >
+                    {hideModel ? "See the logo in 3D" : "Disable 3D logo"}
+                  </button>
+                </div>
+              </>
             ) : (
               <model-viewer
                 alt="Google Developers logo"
@@ -69,9 +107,15 @@ const Home = () => {
                 <span className="tcoer">TCOER</span> */}
               </h1>
               <p className="mt-3 ">
-                We are a growing community loaded with creative developers who are passionate about creating an impact by exploring different technologies and building meaningful projects that solve real world problems.
+                We are a growing community loaded with creative developers who
+                are passionate about creating an impact by exploring different
+                technologies and building meaningful projects that solve real
+                world problems.
               </p>
-              <p>Join us on this thrilling journey!! Let's capture remarkable memories together ✨</p>
+              <p>
+                Join us on this thrilling journey!! Let's capture remarkable
+                memories together ✨
+              </p>
               <a
                 href="https://gdsc.community.dev/accounts/login/?next=/trinity-college-of-engineering-and-research-pune/"
                 target="nt"

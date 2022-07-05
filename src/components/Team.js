@@ -1,9 +1,6 @@
 import React from "react";
 import Mystyle from "./Team.module.css";
 import "./style.css";
-import Footer from "./Footer";
-// import MyCard from "./MyCard";
-import SubHome from "./SubHome";
 import MyCard from "./MyCard";
 
 const Bar = () => {
@@ -28,8 +25,10 @@ const Bar = () => {
           >
             <i className="fab fa-chrome fa-2x"></i>
             <div className="ps-3">
-              <h5 className="mt-n1 mb-0">Web</h5>
-              <h6>Team</h6>
+              <h5 style={{ paddingTop: "5px" }} className="mt-n1 mb-0">
+                Web
+              </h5>
+              <h6 className="mb-0">Team</h6>
             </div>
           </a>
         </li>
@@ -41,8 +40,10 @@ const Bar = () => {
           >
             <i className="fas fa-magic fa-2x "></i>
             <div className="ps-3">
-              <h5 className="mt-n1 mb-0">Design</h5>
-              <h6>Team</h6>
+              <h5 style={{ paddingTop: "5px" }} className="mt-n1 mb-0">
+                Design
+              </h5>
+              <h6 className="mb-0">Team</h6>
             </div>
           </a>
         </li>
@@ -54,8 +55,10 @@ const Bar = () => {
           >
             <i className="fas fa-cogs fa-2x "></i>
             <div className="ps-3">
-              <h5 className="mt-n1 mb-0">Technical</h5>
-              <h6>Team</h6>
+              <h5 style={{ paddingTop: "5px" }} className="mt-n1 mb-0">
+                Technical
+              </h5>
+              <h6 className="mb-0">Team</h6>
             </div>
           </a>
         </li>
@@ -67,8 +70,10 @@ const Bar = () => {
           >
             <i className="fab fa-android fa-2x"></i>
             <div className="ps-3">
-              <h5 className="mt-n1 mb-0">Android</h5>
-              <h6>Team</h6>
+              <h5 style={{ paddingTop: "5px" }} className="mt-n1 mb-0">
+                Android
+              </h5>
+              <h6 className="mb-0">Team</h6>
             </div>
           </a>
         </li>
@@ -85,34 +90,47 @@ export const Team = () => {
           <h1 className="text-cente text-primary  my-3">Founding Team</h1>
         </div>
         <section id="learn" className="p-5" style={{ background: "#d4d7da" }}>
-        <div className="container">
-          <div
-            className="row align-items-center justify-content-between"
-            style={{ padding: "2rem" }}
-          >
-            <div style={{ textAlign: "right" }} className="col-md">
-              <img
-                src="./images/team.gif"
-                className="img-fluid"
-                alt=""
-                style={{ borderRadius: "3rem", width: "40rem" }}
-              />
-            </div>
+          <div className="container">
             <div
-              id="need-responsive"
-              className="col-md"
-              style={{ padding: "2rem 0.5rem" }}
+              className="row align-items-center justify-content-between"
+              style={{ padding: "2rem" }}
             >
-              <h2 >The Board of 2021-22</h2>
-              <h2 className="lead"><em>"“Coming together is a beginning, staying together is progress, and working together is success.”</em> ~ Henry Ford<br></br>
-          <br></br>We at Google Developer Student Club, TCOER believe that what a strong group of people can accomplish together is much larger and far greater than what an individual can achieve alone.
-          Our Core team has left no stone unturned and constantly worked to help each member grow by sharing useful learning resources, organizing events on different technologies and providing guidance for exploring various domains of their interest."
-          </h2>
+              <div style={{ textAlign: "right" }} className="col-md">
+                <img
+                  src="./images/team.gif"
+                  className="img-fluid"
+                  alt=""
+                  style={{ borderRadius: "3rem", width: "40rem" }}
+                />
+              </div>
+              <div
+                id="need-responsive"
+                className="col-md"
+                style={{ padding: "2rem 0.5rem" }}
+              >
+                <h2>The Board of 2021-22</h2>
+                <h2 className="lead">
+                  <em>
+                    “Coming together is a beginning, staying together is
+                    progress, and working together is success.”
+                  </em>{" "}
+                  <b>~ Henry Ford</b>
+                </h2>
+                <h2 style={{ fontSize: "1rem", fontWeight: "300" }}>
+                  We at Google Developer Student Club, TCOER believe that what a
+                  strong group of people can accomplish together is much larger
+                  and far greater than what an individual can achieve alone.
+                </h2>
+                <h2 style={{ fontSize: "1rem", fontWeight: "300" }}>
+                  Our Core team has left no stone unturned and constantly worked
+                  to help each member grow by sharing useful learning resources,
+                  organizing events on different technologies and providing
+                  guidance for exploring various domains of their interest."
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-       
+        </section>
       </div>
 
       <div className="">
@@ -159,10 +177,10 @@ export const Team = () => {
                 url="./images/DSC Team/Technical Team/Vedant Bhogawade.png"
               />
               <MyCard
-                name="Mohammed Ali Inamdaar"
+                name="Mohammed Ali Inamdar"
                 designation="Android Lead"
                 social="https://www.linkedin.com/in/mohammedaliinamdar"
-                url="./images/DSC Team/Android Team/Mohammed Ali.jpg"
+                url="./images/DSC Team/Android Team/Mohammed Ali.png"
               />
               <MyCard
                 name="Tanmay Shinde"
@@ -174,13 +192,13 @@ export const Team = () => {
                 name="Mohammad Anas"
                 designation="Events Lead"
                 social="https://www.linkedin.com/in/mohammad-anas-"
-                url="./images/DSC Team/Events and Management Team/Mohammad Anas.jpg"
+                url="./images/DSC Team/Events and Management Team/Mohammad Anas.png"
               />
               <MyCard
                 name="Raj Thakur"
                 designation="Design And Content Lead"
                 social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
-                url="./images/DSC Team/Content and Design team/Raj Thakur.jpeg"
+                url="./images/DSC Team/Content and Design team/Raj Thakur.png"
               />
               <MyCard
                 name="Sakshi Sawant"
@@ -192,7 +210,7 @@ export const Team = () => {
                 name="Rutuja Shinde"
                 designation="Management Co-Lead"
                 social=""
-                url="./images/DSC Team/Events and Management Team/Rutuja Shinde.jpg"
+                url="./images/DSC Team/Events and Management Team/Rutuja Shinde.png"
               />
             </div>
 

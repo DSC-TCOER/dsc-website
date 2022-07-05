@@ -17,8 +17,8 @@ li {
 }
 
 .hero {
-  margin-bottom: 10rem;
-  margin-top: 9rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 .hero img {
   display: block;
@@ -80,18 +80,19 @@ li {
 }
 .card-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   padding-top: 1rem;
   padding-inline: 8px;
   min-height: 4ch;
+  margin-bottom: 0px;
 }
 .card p {
   line-height: 1.2;
   font-size: 1rem;
   text-align: center;
   color: gray;
-  padding: 0.5rem 1.7rem;
+  padding: 0.2rem 1.2rem;
   height: 120px;
   overflow: auto;
 }
