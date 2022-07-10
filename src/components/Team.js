@@ -152,7 +152,7 @@ export const Team = () => {
                 name="Zahra Dehghan"
                 designation="GDSC TCOER founding Lead"
                 social="https://www.linkedin.com/in/zahra-dehghan-8ab05b193"
-                url="./images/DSC Team/Zahra.png"
+                url="./images/DSC Team/Zahra-dsc.png"
               />
             </div>
 
@@ -174,43 +174,43 @@ export const Team = () => {
                 name="Vedant Bhogawade"
                 designation="Technical Lead"
                 social="https://www.linkedin.com/in/vedantbhogawade-785856193"
-                url="./images/DSC Team/Technical Team/Vedant Bhogawade.png"
+                url="./images/DSC Team/Technical Team/Vedant Bhogawade-dsc.png"
               />
               <MyCard
                 name="Mohammed Ali Inamdar"
                 designation="Android Lead"
                 social="https://www.linkedin.com/in/mohammedaliinamdar"
-                url="./images/DSC Team/Android Team/Mohammed Ali.png"
+                url="./images/DSC Team/Android Team/Mohammed Ali-dsc.png"
               />
               <MyCard
                 name="Tanmay Shinde"
                 designation="Web Lead"
                 social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
-                url="./images/DSC Team/Web Team/Tanmay-dsc.png"
+                url="./images/DSC Team/Web Team/Tanmay Shinde-dsc.png"
               />
               <MyCard
                 name="Mohammad Anas"
                 designation="Events Lead"
                 social="https://www.linkedin.com/in/mohammad-anas-"
-                url="./images/DSC Team/Events and Management Team/Mohammad Anas.png"
+                url="./images/DSC Team/Events and Management Team/Mohammad Anas-dsc.png"
               />
               <MyCard
                 name="Raj Thakur"
                 designation="Design And Content Lead"
                 social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
-                url="./images/DSC Team/Content and Design team/Raj Thakur.png"
+                url="./images/DSC Team/Content and Design team/Raj Thakur-dsc.png"
               />
               <MyCard
                 name="Sakshi Sawant"
                 designation="Management Lead"
                 social="https://www.linkedin.com/in/sakshi-shankar-sawant-3772431b3"
-                url="./images/DSC Team/Events and Management Team/sakshi sawant.jpg"
+                url="./images/DSC Team/Events and Management Team/sakshi sawant-dsc.jpg"
               />
               <MyCard
                 name="Rutuja Shinde"
                 designation="Management Co-Lead"
                 social=""
-                url="./images/DSC Team/Events and Management Team/Rutuja Shinde.png"
+                url="./images/DSC Team/Events and Management Team/Rutuja Shinde-dsc.png"
               />
             </div>
 
