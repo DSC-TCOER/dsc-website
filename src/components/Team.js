@@ -150,7 +150,7 @@ export const Team = () => {
             >
               <MyCard
                 name="Zahra Dehghan"
-                designation="GDSC TCOER founding Lead"
+                designation="GDSC TCOER Lead"
                 social="https://www.linkedin.com/in/zahra-dehghan-8ab05b193"
                 // url="./images/DSC Team/Zahra-dsc.png"
                 url="./images/DSC Team/Zahra-dsc.jpg"
@@ -161,7 +161,7 @@ export const Team = () => {
               style={{ width: "50%", margin: "auto", marginTop: "4rem" }}
               className="text-center border-bottom border-4 border-primary px-1"
             >
-              <h1 className="text-primary">Founding Core Team</h1>
+              <h1 className="text-primary">Core Team</h1>
             </div>
             <div
               style={{

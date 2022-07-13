@@ -15,12 +15,11 @@
   justify-content: center;
 }
 .nav-brand .club {
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   padding-bottom: 0px;
 }
 .nav-brand .college {
-  font-size: 0.75rem;
-  color: gray;
+  font-size: 1.1rem;
 }
 .nav-item {
   margin: 0px 1rem;

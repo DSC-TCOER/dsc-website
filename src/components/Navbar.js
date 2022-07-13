@@ -43,7 +43,7 @@ const Navbar = () => {
         style={{
           boxShadow:
             "0 0.9px 2.2px rgba(0, 0, 0, 0.039), 0 2.2px 5.3px rgba(0, 0, 0, 0.048), 0 4.1px 10px rgba(0, 0, 0, 0.052), 0 7.4px 17.9px rgba(0, 0, 0, 0.057), 0 13.8px 33.4px rgba(0, 0, 0, 0.067),0 33px 80px rgba(0, 0, 0, 0.11)",
-          padding: "0px",
+          padding: "0.4em 6px",
         }}
         className="navbar fixed-top navbar-expand-lg navbar-light bg-light "
       >
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="nav-brand">
             <img src="./images/dsc-logo.png" alt="DSC TCOER Logo"></img>
             <div className="text">
-              <div className="club">Google Developer Students Club</div>
+              <div className="club">Google Developer Student Club</div>
               <div className="college">
                 Trinity College of Engineering and Research
               </div>
@@ -69,6 +69,7 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{ boxShadow: "none" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
