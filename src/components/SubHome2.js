@@ -12,18 +12,15 @@ const SubHome = ({ url, para, head }) => {
             >
               <img
                 src={url}
-                className="img-fluid"
+                className="aim-gifs"
                 alt=""
                 style={{
-                  borderRadius: "44px",
                   marginTop: "6px",
                   marginBottom: "6px",
-                  width: "25rem",
-                  height: "20rem",
                 }}
               />
             </div>
-            <div className="col-md p-5">
+            <div className="aim-text col-md">
               <h2>{head}</h2>
               <p style={{ fontSize: "1.3rem" }} className="lead">
                 {para}

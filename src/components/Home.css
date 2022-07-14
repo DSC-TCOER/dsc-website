@@ -84,6 +84,16 @@
   color: white;
 }
 
+.aim-gifs {
+  border-radius: 44px;
+  max-width: 100%;
+  width: 25rem;
+  height: 20rem;
+}
+.aim-text {
+  padding: 3rem !important;
+}
+
 .react-photo-album--row {
   justify-content: space-around !important;
 }
@@ -111,5 +121,14 @@
   header {
     width: 90%;
     margin: auto;
+  }
+  .aim-gifs {
+    border-radius: 34px;
+    max-width: 100%;
+    width: 20rem;
+    height: 15rem;
+  }
+  .aim-text {
+    padding: 1.3rem !important;
   }
 }

@@ -89,7 +89,7 @@ export const Team = () => {
         <div className="text-center  ">
           <h1 className="text-cente text-primary  my-3">Founding Team</h1>
         </div>
-        <section id="learn" className="p-5" style={{ background: "#d4d7da" }}>
+        <section id="learn" style={{ background: "#d4d7da" }}>
           <div className="container">
             <div
               className="row align-items-center justify-content-between"
@@ -100,7 +100,7 @@ export const Team = () => {
                   src="./images/team.gif"
                   className="img-fluid"
                   alt=""
-                  style={{ borderRadius: "3rem", width: "40rem" }}
+                  style={{ borderRadius: "2rem", width: "40rem" }}
                 />
               </div>
               <div
