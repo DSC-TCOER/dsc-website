@@ -24,6 +24,11 @@ import PhotoAlbum from "react-photo-album";
 
 const photos = [
   {
+    src: "./images/hallOfFame/saba-new-lead.jpeg",
+    width: 1080,
+    height: 1090,
+  },
+  {
     src: "./images/hallOfFame/gaurang_gsoc.webp",
     width: 1080,
     height: 1090,
@@ -166,7 +171,7 @@ const HallOfFame = () => {
       <PhotoAlbum
         layout="rows"
         photos={photos}
-        imageProps={{ className: "TM" }}
+        imageProps={{ loading: "lazy" }}
       />
     </div>
   );

@@ -1,13 +1,7 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
 
 import { Team } from "./components/Team";
 import Footer from "./components/Footer";
@@ -16,7 +10,6 @@ import Events from "./components/Events";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTop from "./components/BacktoTop";
-import { useEffect, useState } from "react";
 
 function App() {
   // const [show, setShow] = useState("");

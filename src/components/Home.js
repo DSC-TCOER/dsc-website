@@ -26,6 +26,11 @@ const Home = () => {
     console.log(slideButton);
   };
   const [hideModel, setHideModel] = useState(true);
+  const allImages = document.querySelectorAll(".react-photo-album--photo");
+  console.log(allImages);
+  allImages.forEach((img) => {
+    img.setAttribute("loading", "lazy");
+  });
   return (
     <>
       <header style={{ margin: "auto" }} className="col-xxl-8 py-5">
