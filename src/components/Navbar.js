@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* Brand Component */}
         <Link style={{ padding: "0px 0px" }} className="navbar-brand" to="/">
           <div className="nav-brand">
-            <img src="./images/college-logo.png" alt="DSC TCOER Logo"></img>
+            <img src="./images/dsc-logo.png" alt="DSC TCOER Logo"></img>
             <div className="text">
               <div className="club">Google Developer Student Club</div>
               <div className="college">

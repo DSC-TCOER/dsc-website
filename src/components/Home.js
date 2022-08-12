@@ -108,10 +108,18 @@ const Home = () => {
             >
               <h3>Presenting,</h3>
               <h1>
-                GDSC TCOER
+                GDSC
                 {/* <span className="gdsc">GDSC</span>{" "}
                 <span className="tcoer">TCOER</span> */}
               </h1>
+              <h3 style={{ marginTop: "1rem" }}>
+                <img
+                  src="./images/college-logo.png"
+                  style={{ width: "2rem" }}
+                  alt="College Logo"
+                ></img>
+                Trinity College Of Engineering and Research, Pune
+              </h3>
               <p className="mt-3 ">
                 We are a growing community loaded with creative developers who
                 are passionate about creating an impact by exploring different
