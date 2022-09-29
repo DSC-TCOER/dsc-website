@@ -13,6 +13,37 @@ const Events = () => {
 
       <div className="bound">
         <ul style={{ padding: "0px" }} className="cards">
+          {/* 18 */}
+          <li className="card-list-item">
+            <div className="card">
+              <img alt="Event Poster" src="./images/events-2022/info.jpeg" />
+              <h2 className="card-title">2022-23 Inauguration Event</h2>
+              <p>
+                <br />
+                Join us on the 13th of September, Tuesday at 2:00 PM Venue: CC
+                LAB
+                <br />
+                🔊 <b>Google Developer Student Clubs '22-'23</b> at TCOER is
+                here with their very first event ➡️ Orientation Session! 🤩🥳{" "}
+                <br /> If you are a tech enthusiast who's looking forward to
+                learn various technologies, interact with peers as well as
+                enhance technical skills with hands-on experience then this is a
+                perfect community for you! ⚡😁
+                <br />
+                GET YOUR TICKET NOW! 🎟️
+              </p>
+              <a
+                className="know-more-btn"
+                href="https://gdsc.community.dev/events/details/developer-student-clubs-trinity-college-of-engineering-and-research-pune-presents-orientation-session-13th-september/"
+                target="nt"
+              >
+                {/* <button className="know-more-btn" role="button"> */}
+                know more
+                {/* </button> */}
+              </a>
+            </div>
+          </li>
+
           <li className="card-list-item">
             <div className="card">
               <video
