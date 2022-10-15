@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const Img = "./images/DSC Team/Zahra.jpg";
+//const Img = "./images/DSC Team/Zahra.jpg";
 const MyCard = ({ name, designation, social, url }) => {
   return (
     <div className="m-card">

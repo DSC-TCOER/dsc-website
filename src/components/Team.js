@@ -3,6 +3,7 @@ import Mystyle from "./Team.module.css";
 import "./style.css";
 import MyCard from "./MyCard";
 
+
 const Bar = () => {
   return (
     <div className={Mystyle.container}>
@@ -149,11 +150,11 @@ export const Team = () => {
               className="d-flex justify-content-center"
             >
               <MyCard
-                name="Zahra Dehghan"
+                name="Saba Sayyed"
                 designation="GDSC TCOER Lead"
-                social="https://www.linkedin.com/in/zahra-dehghan-8ab05b193"
+                social="https://www.linkedin.com/in/saba-sayyed-568539232/"
                 // url="./images/DSC Team/Zahra-dsc.png"
-                url="./images/DSC Team/Zahra-dsc.jpg"
+                url="./images/DSC Team/Saba-Sayyed.jpg"
               />
             </div>
 
@@ -172,61 +173,84 @@ export const Team = () => {
               className="row g-4 d-flex justify-content-center"
             >
               <MyCard
-                name="Vedant Bhogawade"
+                name="Eeshan Mishra"
                 designation="Technical Lead"
-                social="https://www.linkedin.com/in/vedantbhogawade-785856193"
-                url="./images/DSC Team/Technical Team/Vedant Bhogawade-dsc.jpg"
+                social="https://www.linkedin.com/in/eeshanmishra01/"
+                url="./images/DSC Team/Technical Team/Eeshan-Mishra.jpg"
               />
               <MyCard
-                name="Mohammed Ali Inamdar"
+                name="Faizan Kalkoti"
                 designation="Android Lead"
-                social="https://www.linkedin.com/in/mohammedaliinamdar"
-                url="./images/DSC Team/Android Team/Mohammed Ali-dsc.jpg"
+                social="https://www.linkedin.com/in/faizan-kalkoti-40994121a/"
+                url="./images/DSC Team/Android Team/FaizanKalkoti.jpg"
               />
               <MyCard
-                name="Tanmay Shinde"
+                name="Girish Bansode"
                 designation="Web Lead"
-                social="https://www.linkedin.com/in/tanmay-shinde-0670b9192"
-                url="./images/DSC Team/Web Team/Tanmay Shinde-dsc.jpg"
+                social="https://www.linkedin.com/in/girishban/"
+                url="./images/DSC Team/Web Team/Girish-Bansode.jpg"
               />
               <MyCard
-                name="Mohammad Anas"
+                name="Prasanna Shinde"
                 designation="Events Lead"
-                social="https://www.linkedin.com/in/mohammad-anas-"
-                url="./images/DSC Team/Events and Management Team/Mohammad Anas-dsc.jpg"
+                social="https://www.linkedin.com/in/prasanna-shinde-298b74231/"
+                url="./images/DSC Team/Events and Management Team/Prasanna-Shinde.jpg"
               />
               <MyCard
-                name="Raj Thakur"
+                name="Aum Battul"
                 designation="Design And Content Lead"
-                social="https://www.linkedin.com/in/raj-thakur-2b946a20b"
-                url="./images/DSC Team/Content and Design team/Raj Thakur-dsc.jpg"
+                social="https://www.linkedin.com/in/aum-battul-4b42801bb/"
+                url="./images/DSC Team/Content and Design team/AumBattul.jpg"
               />
+
+              {
+            /*  
+            
               <MyCard
                 name="Sakshi Sawant"
                 designation="Management Lead"
                 social="https://www.linkedin.com/in/sakshi-shankar-sawant-3772431b3"
                 url="./images/DSC Team/Events and Management Team/sakshi sawant-dsc-test.jpg"
               />
-              <MyCard
+
+               <MyCard
                 name="Rutuja Shinde"
                 designation="Management Co-Lead"
                 social=""
                 url="./images/DSC Team/Events and Management Team/Rutuja Shinde-dsc.jpg"
               />
+              
+              
+              */
+            
+            }
+             
             </div>
 
-            <div
+           
+            {
+            /*  <div
               style={{ width: "50%", margin: "auto", marginTop: "6rem" }}
               className="text-center border-bottom border-3 border-primary px-1"
             >
               <h2 className="text-primary">Volunteering Members</h2>
-            </div>
+            </div> */
+            
+            }
+            
             <div className="tab-class text-center my-5">
-              <Bar />
-              <div className="tab-content" style={{ marginTop: "0px" }}>
+                 {/*  <Bar />  */}
+             <div className="tab-content" style={{ marginTop: "0px" }}>
+              
+
+
+
+
                 {/* Domain teams */}
 
-                <div id="tab-1" className="tab-pane p-0 active">
+
+{/*  //
+ <div id="tab-1" className="tab-pane p-0 active">
                   <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                       <div
@@ -260,9 +284,14 @@ export const Team = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
+                
+                */}
 
-                <div id="tab-2" className="tab-pane show p-0">
+              
+ {/*
+ 
+ <div id="tab-2" className="tab-pane show p-0">
                   <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                       <div
@@ -291,8 +320,12 @@ export const Team = () => {
                     </div>
                   </div>
                 </div>
+ */}
 
-                <div id="tab-3" className="tab-pane show p-0">
+                
+{/*
+
+<div id="tab-3" className="tab-pane show p-0">
                   <div className="container-xxl pt-5 pb-3">
                     <div className="container">
                       <div
@@ -316,7 +349,11 @@ export const Team = () => {
                   </div>
                 </div>
 
-                <div id="tab-4" className="tab-pane show p-0">
+*/}
+
+{/*
+
+<div id="tab-4" className="tab-pane show p-0">
                   <div className="container-xxl pt-5 pb-3">
                     <div
                       className="container "
@@ -348,10 +385,14 @@ export const Team = () => {
                     </div>
                   </div>
                 </div>
+
+*/}
+                
               </div>
             </div>
-
-            <div
+            
+            
+{/*  <div
               style={{ width: "50%", margin: "auto", marginTop: "6rem" }}
               className="text-center border-bottom border-3 border-primary px-1"
             >
@@ -381,7 +422,8 @@ export const Team = () => {
                 social="https://www.linkedin.com/in/kaustubh-trivedi-459399158"
                 url="./images/DSC Team/Web Team/kaustybh Trivedi.jpeg"
               />
-            </div>
+            </div> */}
+          
           </div>
         </div>
       </div>
