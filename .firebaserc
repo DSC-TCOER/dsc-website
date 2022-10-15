@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "dsc-tcoer-pune",
+    "default": "gdsc-tcoer",
     "GDSC WEB": "gdsc-tcoer"
   },
   "targets": {},
