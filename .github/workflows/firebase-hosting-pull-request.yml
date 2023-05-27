@@ -15,3 +15,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DSC_TCOER_PUNE }}'
           projectId: dsc-tcoer-pune
+  deploy:
+    needs: build_and_preview
+    runs-on: ubuntu-latest
