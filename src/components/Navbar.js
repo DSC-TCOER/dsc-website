@@ -123,6 +123,11 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </li>
+              <li className="nav-item" onClick={navItemsHandler}>
+                <Link className="nav-link" to="/archive" name="archive">
+                  Archive
+                </Link>
+              </li>
               {/* <li className="nav-item">
                 <div className="nav-link" onClick={toggleDarkMode}>
                   Dark Mode

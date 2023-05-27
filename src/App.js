@@ -10,6 +10,7 @@ import Events from "./components/Events";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BackToTop from "./components/BacktoTop";
+import { Archive } from "./components/archive";
 
 function App() {
   // const [show, setShow] = useState("");
@@ -65,6 +66,8 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
 
             <Route path="/events" element={<Events />}></Route>
+
+            <Route path="/archive" element= {<Archive />}></Route>
 
             <Route path="/footer" element={<Footer />}></Route>
           </Routes>

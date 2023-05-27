@@ -4,7 +4,7 @@ import "./style.css";
 import MyCard from "./MyCard";
 
 
-const Bar = () => {
+export const Bar = () => {
   return (
     <div className={Mystyle.container}>
       <ul
@@ -430,3 +430,5 @@ export const Team = () => {
     </>
   );
 };
+
+export default Bar;
