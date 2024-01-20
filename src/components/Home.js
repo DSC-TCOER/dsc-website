@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SubHome2 from "./SubHome2";
 import "@google/model-viewer";
 import "./Home.css";
@@ -115,7 +115,7 @@ const Home = () => {
               <h3 style={{ marginTop: "1rem" }}>
                 <img
                   src="./images/college-logo.png"
-                  style={{ width: "2rem" }}
+                  style={{ width: "2rem",paddingRight:"0.5rem" }}
                   alt="College Logo"
                 ></img>
                 Trinity College Of Engineering and Research, Pune
@@ -145,7 +145,7 @@ const Home = () => {
       </header>
       <div className="container-xxl">
         <div className="container">
-          <h1 className=" ff-secondary text-center text-primary fw-normal my-5">
+          <h1 className=" ff-secondary text-center text-primary fw-normal my-5 sectionHeading">
             Our Aim
           </h1>
           <div style={{ justifyContent: "center" }} className="row g-4 my-3">
@@ -160,7 +160,7 @@ const Home = () => {
                   className="my-btn-primary aim-item-btn"
                   role="button"
                   name="Slide 1"
-                  onClick={onClick}
+                  // onClick={onClick}
                 >
                   <div className="aim-item-text">
                     <i className="fas fa-users fa-2x"></i>
@@ -181,7 +181,7 @@ const Home = () => {
                   className="my-btn-primary aim-item-btn"
                   role="button"
                   name="Slide 2"
-                  onClick={onClick}
+                  // onClick={onClick}
                 >
                   <div className="aim-item-text">
                     <i className="fas fa-lightbulb fa-2x"></i>
@@ -202,7 +202,7 @@ const Home = () => {
                   className="my-btn-primary aim-item-btn"
                   role="button"
                   name="Slide 3"
-                  onClick={onClick}
+                  // onClick={onClick}
                 >
                   <div className="aim-item-text">
                     <i className="fas fa-trophy fa-2x"></i>
@@ -212,14 +212,14 @@ const Home = () => {
               </a>
             </div>
 
-            <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
+            {/* <h3 className=" ff-secondary text-center text-primary fw-normal my-5">
               Helping Students Bridge The Gap Between Theory and Practice
-            </h3>
+            </h3> */}
           </div>
         </div>
       </div>
 
-      <Carousel variant="dark">
+      {/* <Carousel variant="dark">
         <Carousel.Item interval={2500}>
           <SubHome2
             url="./images/connect.gif"
@@ -241,7 +241,7 @@ const Home = () => {
             head="Grow"
           />
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
 
       <div
         style={{
@@ -251,7 +251,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h2 className=" ff-secondary text-primary fw-normal border-start  border-4 border-primary px-1">
+        <h2 className="ff-secondary text-primary fw-normal px-1 sectionHeading">
           About Us
         </h2>
         <About />
@@ -285,7 +285,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h2 className=" ff-secondary text-primary fw-normal border-start  border-4 border-primary px-1">
+        <h2 className=" ff-secondary text-primary fw-normal px-1 sectionHeading">
           Hall Of Fame 🏆
         </h2>
       </div>

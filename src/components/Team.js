@@ -2,7 +2,7 @@ import React from "react";
 import Mystyle from "./Team.module.css";
 import "./style.css";
 import MyCard from "./MyCard";
-
+import { teamData } from "../constants";
 
 export const Bar = () => {
   return (
@@ -87,9 +87,9 @@ export const Team = () => {
   return (
     <>
       <div className="my-3 ">
-        <div className="text-center  ">
+        {/* <div className="text-center  ">
           <h1 className="text-cente text-primary  my-3">Founding Team</h1>
-        </div>
+        </div> */}
         <section id="learn" style={{ background: "#d4d7da" }}>
           <div className="container">
             <div
@@ -109,7 +109,7 @@ export const Team = () => {
                 className="col-md"
                 style={{ padding: "2rem 0.5rem" }}
               >
-                <h2>The Board of 2021-22</h2>
+                <h2>The Board of 2023-24</h2>
                 <h2 className="lead">
                   <em>
                     “Coming together is a beginning, staying together is
@@ -135,6 +135,9 @@ export const Team = () => {
       </div>
 
       <div className="">
+        <div className="text-center">
+          <h1 className="text-center text-danger  my-3">Board of {teamData[0].year}</h1>
+        </div>
         <div className="container-xxl py-5 ">
           <div className="container">
             {/* Community lead card */}
@@ -150,11 +153,11 @@ export const Team = () => {
               className="d-flex justify-content-center"
             >
               <MyCard
-                name="Saba Sayyed"
+                name={teamData[0].lead.name}
                 designation="GDSC TCOER Lead"
-                social="https://www.linkedin.com/in/saba-sayyed-568539232/"
+                social={teamData[0].lead.social}
                 // url="./images/DSC Team/Zahra-dsc.png"
-                url="./images/DSC Team/Saba-Sayyed.jpg"
+                url={teamData[0].lead.url}
               />
             </div>
 
@@ -172,36 +175,18 @@ export const Team = () => {
               }}
               className="row g-4 d-flex justify-content-center"
             >
-              <MyCard
-                name="Eeshan Mishra"
-                designation="Technical Lead"
-                social="https://www.linkedin.com/in/eeshanmishra01/"
-                url="./images/DSC Team/Technical Team/Eeshan-Mishra.jpg"
-              />
-              <MyCard
-                name="Faizan Kalkoti"
-                designation="Android Lead"
-                social="https://www.linkedin.com/in/faizan-kalkoti-40994121a/"
-                url="./images/DSC Team/Android Team/FaizanKalkoti.jpg"
-              />
-              <MyCard
-                name="Girish Bansode"
-                designation="Web Lead"
-                social="https://www.linkedin.com/in/girishban/"
-                url="./images/DSC Team/Web Team/Girish-Bansode.jpg"
-              />
-              <MyCard
-                name="Prasanna Shinde"
-                designation="Events Lead"
-                social="https://www.linkedin.com/in/prasanna-shinde-298b74231/"
-                url="./images/DSC Team/Events and Management Team/Prasanna-Shinde.jpg"
-              />
-              <MyCard
-                name="Aum Battul"
-                designation="Design And Content Lead"
-                social="https://www.linkedin.com/in/aum-battul-4b42801bb/"
-                url="./images/DSC Team/Content and Design team/AumBattul.jpg"
-              />
+              {
+                teamData[0].team.map((member) => {
+                  return (
+                    <MyCard
+                      name={member.name}
+                      designation={member.designation}
+                      social={member.social}
+                      url={member.url}
+                    />
+                  )
+                })
+              }
             </div>
           </div>
         </div>
