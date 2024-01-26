@@ -15,4 +15,3 @@ npm start
 All the constant Data are located at ./constants/index.js
 For teamData 0th index of the array represents the Current GDSC Team and last index represents the Founding/First GDSC Team
 
-
