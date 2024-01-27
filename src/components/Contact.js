@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 

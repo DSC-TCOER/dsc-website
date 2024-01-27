@@ -59,10 +59,10 @@ const Events = () => {
               </video>
               <h2 className="card-title">Impact 2022</h2>
               <p>
-                <a href="https://impact22.netlify.app/" target="nt">
+                {/* <a href="https://impact22.netlify.app/" target="nt">
                   See leaderboard
                 </a>
-                <br />
+                <br /> */}
                 An <b>Ideathon</b> organized to encourage our campus students to
                 participate in the <b>2022 Solution Challenge</b> and help them
                 get started with brainstorming ideas to solve a problem for at

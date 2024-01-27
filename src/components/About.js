@@ -14,7 +14,10 @@ const About = () => {
                       src="./images/homeIntro.gif"
                       className="img-fluid"
                       alt=""
-                      style={{ borderRadius: "3rem" }}
+                      style={{
+                        borderRadius: "3rem",
+                        boxShadow: "5px 5px #e2e8f0",
+                      }}
                     />
                   </div>
                 </div>
@@ -26,6 +29,7 @@ const About = () => {
                     className="img-fluid rounded "
                     src="./images/dsc-logo.png"
                     style={{ width: "45px" }}
+                    alt="gdsc logo"
                   />{" "}
                   DSC TCOER
                 </h1>
@@ -65,7 +69,7 @@ const About = () => {
                   <div className="col-sm-6">
                     <div className="d-flex align-items-center border-start border-5 border-primary px-2">
                       <div className="ps-2">
-                        <p className="mb-0">No of</p>
+                        <p className="mb-0">Number of</p>
                         <h6 className="text-uppercase mb-0">Members</h6>
                       </div>
                       <h1
