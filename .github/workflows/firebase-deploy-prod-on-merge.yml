@@ -1,3 +1,6 @@
+env:
+  CI: false
+
 name: Deploy to Live Channel
 
 on:
