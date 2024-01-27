@@ -1,30 +1,21 @@
-import React, { useEffect, useState } from "react";
-import SubHome2 from "./SubHome2";
+import React, { useState } from "react";
 import "@google/model-viewer";
 import "./Home.css";
-import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./About";
 import HallOfFame from "./HallOfFame";
 
 const Home = () => {
-  const onClick = (e) => {
-    console.log(e.currentTarget.className);
-    // let targetElem = e.currentTarget.name;
-    // document.getElementById("Connect").parentElement.classList.remove("active");
-    // document.getElementById("Learn").parentElement.classList.remove("active");
-    // document.getElementById("Grow").parentElement.classList.remove("active");
-    // var targetElemClass =
-    //   document.getElementById(targetElem).parentElement.className;
-    // document.getElementById(targetElem).parentElement.className =
-    //   "active " + targetElemClass;
-    let targetElem = e.currentTarget.name;
-    var slideButton = document.querySelector(
-      `button[aria-label="${targetElem}"]`
-    );
-    slideButton.click();
-    console.log(slideButton);
-  };
+  // const onClick = (e) => {
+  //   console.log(e.currentTarget.className);
+  //   let targetElem = e.currentTarget.name;
+  //   var slideButton = document.querySelector(
+  //     `button[aria-label="${targetElem}"]`
+  //   );
+  //   slideButton.click();
+  //   console.log(slideButton);
+  // };
+
   const [hideModel, setHideModel] = useState(true);
   const allImages = document.querySelectorAll(".react-photo-album--photo");
   console.log(allImages);
@@ -77,7 +68,6 @@ const Home = () => {
                       setHideModel(!hideModel);
                     }}
                     className="my-btn-secondary"
-                    role="button"
                   >
                     {hideModel ? "See the logo in 3D" : "Disable 3D logo"}
                   </button>
@@ -115,7 +105,7 @@ const Home = () => {
               <h3 style={{ marginTop: "1rem" }}>
                 <img
                   src="./images/college-logo.png"
-                  style={{ width: "2rem",paddingRight:"0.5rem" }}
+                  style={{ width: "2rem", paddingRight: "0.5rem" }}
                   alt="College Logo"
                 ></img>
                 Trinity College Of Engineering and Research, Pune
@@ -135,9 +125,7 @@ const Home = () => {
                 target="nt"
                 style={{ textDecoration: "none" }}
               >
-                <button className="my-btn-primary" role="button">
-                  Become A Member
-                </button>
+                <button className="my-btn-primary">Become A Member</button>
               </a>
             </div>
           </div>
@@ -158,7 +146,6 @@ const Home = () => {
                     borderRadius: "50%",
                   }}
                   className="my-btn-primary aim-item-btn"
-                  role="button"
                   name="Slide 1"
                   // onClick={onClick}
                 >
@@ -179,7 +166,6 @@ const Home = () => {
                     borderRadius: "50%",
                   }}
                   className="my-btn-primary aim-item-btn"
-                  role="button"
                   name="Slide 2"
                   // onClick={onClick}
                 >
@@ -200,7 +186,6 @@ const Home = () => {
                     borderRadius: "50%",
                   }}
                   className="my-btn-primary aim-item-btn"
-                  role="button"
                   name="Slide 3"
                   // onClick={onClick}
                 >

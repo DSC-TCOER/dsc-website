@@ -65,7 +65,7 @@ function Footer() {
               <div className="container col-md-6 text-center mb-3 mb-md-0">
                 <a
                   className="text-center"
-                  href="#"
+                  href="/"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   {" "}
@@ -74,7 +74,7 @@ function Footer() {
                 All Right Reserved.
               </div>
               <p className="text-center">
-                <a className="text-primary" href="#">
+                <a className="text-primary" href="/">
                   Back to top
                 </a>
               </p>

@@ -20,7 +20,7 @@ const Navbar = () => {
     });
   };
   function navItemsHandler(e) {
-    const tab = e.target.href.split("/").slice(-1)[0].toLowerCase();
+    // const tab = e.target.href.split("/").slice(-1)[0].toLowerCase();
 
     setTimeout(() => BackToTopHandler(), 50);
     var elems = document.querySelector(".active");
