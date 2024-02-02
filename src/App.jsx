@@ -1,14 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+// import Home from "./components/Home";
+import {Alumini, Home,Team} from "./pages"
 
-import { Team } from "./components/Team";
+// import { Team } from "./components/Team";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Events from "./components/Events";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 import BackToTop from "./components/BacktoTop";
 import { Archive } from "./components/archive";
 
@@ -34,28 +35,14 @@ function App() {
   return (
     <>
       <BackToTop />
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
       <Router>
         <div
           style={{
-            // display: "flex",
-            // flexDirection: "column",
-            // justifyContent: "space-between",
             height: "100vh",
           }}
         >
           <Navbar />
-          <div className="baseline"></div>
+
           <Routes>
             <Route path="/" element={<Home />}></Route>
 
@@ -67,9 +54,7 @@ function App() {
 
             <Route path="/events" element={<Events />}></Route>
 
-            <Route path="/archive" element= {<Archive />}></Route>
-
-            <Route path="/footer" element={<Footer />}></Route>
+            <Route path="/alumini" element= {<Alumini />}></Route>
           </Routes>
           <Footer />
         </div>
