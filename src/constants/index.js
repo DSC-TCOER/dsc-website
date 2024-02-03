@@ -6,7 +6,7 @@ export const teamData = [
         social:"",
         url:"./images/DSC Team/Batch23-24/Yash_Gangan.jpg"
       },
-      team:[
+      coreTeam:[
         {
           name:"Ratnapal Shende",
           designation:"Android Lead",
@@ -82,7 +82,7 @@ export const teamData = [
         social: "https://www.linkedin.com/in/saba-sayyed-568539232/",
         url: "./images/DSC Team/Saba-Sayyed.jpg"
       },
-      team: [
+      coreTeam: [
         {
           name: "Eeshan Mishra",
           designation: "Technical Lead",
@@ -122,7 +122,7 @@ export const teamData = [
         social: "https://www.linkedin.com/in/zahra-dehghan-8ab05b193/",
         url: "./images/DSC Team/Zahra-dsc.jpg"
       },
-      team: [
+      coreTeam: [
         {
           name: "Vedant Bhogawade",
           designation: "Technical Lead",

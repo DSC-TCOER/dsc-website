@@ -168,6 +168,7 @@ const photos = [
 const HallOfFame = () => {
   return (
     <div style={{ width: "90%", margin: "auto", marginBottom: "3rem" }}>
+      <h1 className="w-full text-center text-4xl font-bold font-mono text-blue-700 px-4 pb-1 mb-2 border-b-2 border-b-red-700">Hall of Fame</h1>
       <PhotoAlbum
         layout="rows"
         photos={photos}
