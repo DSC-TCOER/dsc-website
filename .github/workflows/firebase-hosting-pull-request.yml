@@ -11,11 +11,10 @@ jobs:
     if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: npm i && npm run build
-      # - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DSC_TCOER_PUNE }}"
-          projectId: dsc-tcoer-pune
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GDSC_TCOER }}"
+          projectId: gdsc-tcoer
